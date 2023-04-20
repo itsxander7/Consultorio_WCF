@@ -7,7 +7,7 @@ using System.Data;
 
 namespace DAL.MANTENIMIENTOS
 {
-    public class cls_Clientes
+    public class cls_Clientes_DAL
     {
         private int _ID_CLIENTE;
         private string _NOMBRE_CLIENTE, _APELLIDO1_CLIENTE, _APELLIDO2_CLIENTE, _DIRECCION_CLIENTE, _CORREO_CLIENTE, _sMsjError, _TELEFONO;
