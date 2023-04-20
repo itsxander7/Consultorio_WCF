@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MANTENIMIENTOS\cls_Clientes.cs" />
+    <Compile Include="MANTENIMIENTOS\cls_Clientes_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_regiones_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
