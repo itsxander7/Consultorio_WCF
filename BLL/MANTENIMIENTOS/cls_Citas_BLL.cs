@@ -12,7 +12,7 @@ namespace BLL.MANTENIMIENTOS
     {
 
         // LISTAR Y FILTRAR
-        public void List_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void List_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
@@ -34,7 +34,7 @@ namespace BLL.MANTENIMIENTOS
         }
 
         //GUARDAR Y ACTUALIZAR
-        public void Guardar_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void Guardar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
