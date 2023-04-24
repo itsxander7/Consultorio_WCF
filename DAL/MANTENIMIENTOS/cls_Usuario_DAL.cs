@@ -13,17 +13,15 @@ namespace DAL.MANTENIMIENTOS
 
         private uint _uID_Usuario;
         private string _sNombreUsuario, _sPasswordUsuario, _sMsjError;
-        private float _fCostoServicio;
         private DataTable _dtDatos, _dtParametros;
         #endregion
         #region Contructor
-        public uint UID_Usuario { get => _uID_Usuario; set => _uID_Usuario = value; }
-        public string SNombreUsuario { get => _sNombreUsuario; set => _sNombreUsuario = value; }
-        public string SPasswordUsuario { get => _sPasswordUsuario; set => _sPasswordUsuario = value; }
-        public string SMsjError { get => _sMsjError; set => _sMsjError = value; }
-        public float FCostoServicio { get => _fCostoServicio; set => _fCostoServicio = value; }
-        public DataTable DtDatos { get => _dtDatos; set => _dtDatos = value; }
-        public DataTable DtParametros { get => _dtParametros; set => _dtParametros = value; }
+        public uint uID_Usuario { get => _uID_Usuario; set => _uID_Usuario = value; }
+        public string sNombreUsuario { get => _sNombreUsuario; set => _sNombreUsuario = value; }
+        public string sPasswordUsuario { get => _sPasswordUsuario; set => _sPasswordUsuario = value; }
+        public string sMsjError { get => _sMsjError; set => _sMsjError = value; }
+        public DataTable dtDatos { get => _dtDatos; set => _dtDatos = value; }
+        public DataTable dtParametros { get => _dtParametros; set => _dtParametros = value; }
         #endregion
     }
 }
