@@ -12,13 +12,13 @@ namespace BLL.MANTENIMIENTOS
     {
 
         // LISTAR Y FILTRAR
-        public void List_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void List_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
 
-            if (Obj_Citas_DAL.ID_CITA == 0)
+            if (Obj_Citas_DAL.IIdCita == 0)
             {
                 Obj_Citas_DAL.DtParametros = null;
                 Obj_Citas_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CLIENTES", ConfigurationManager.AppSettings["LISTAR_CITAS"], null);
@@ -27,14 +27,14 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
 
-                Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.ID_CLIENTE);
+                Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.IIdCita);
 
                 Obj_Citas_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CITAS", ConfigurationManager.AppSettings["FILTRAR_CITAS"], Obj_Citas_DAL.DtParametros);
             }
         }
 
         //GUARDAR Y ACTUALIZAR
-        public void Guardar_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void Guardar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
@@ -44,11 +44,11 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.ID_CITA);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.ID_CLIENTE);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.ID_ESPECIALIDAD);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.ID_DOCTOR);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.FECHA);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.IIdCita);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.IIdCliente);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.IIdEspecialidad);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.IIdDoctor);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.DtFecha);
 
 
 
@@ -60,7 +60,7 @@ namespace BLL.MANTENIMIENTOS
             Obj_Citas_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_CITAS"], "NORMAL", Obj_Citas_DAL.DtParametros);
         }
 
-        public void Modificar_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
@@ -69,11 +69,11 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.ID_CITA);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.ID_CLIENTE);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.ID_ESPECIALIDAD);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.ID_DOCTOR);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.FECHA);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.IIdCita);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.IIdCliente);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.IIdEspecialidad);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.IIdDoctor);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.DtFecha);
 
 
 
@@ -84,13 +84,13 @@ namespace BLL.MANTENIMIENTOS
 
         //ELIMINAR
 
-        public void Eliminar_CITAS(ref cls_Citas_DAL Obj_Citas_DAL)
+        public void Eliminar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
             Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.ID_CLIENTE);
+            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.IIdCita);
 
             Obj_Citas_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CITAS"], "NORMAL", Obj_Citas_DAL.DtParametros);
         }
