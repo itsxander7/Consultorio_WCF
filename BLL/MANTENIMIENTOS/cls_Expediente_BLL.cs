@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Expediente(ref cls_Expediente_DAL Obj_Expediente_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
             if (Obj_Expediente_DAL.uID_Expediente == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Expediente(ref cls_Expediente_DAL Obj_Expediente_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Expediente(ref cls_Expediente_DAL Obj_Expediente_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -79,7 +79,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Expediente(ref cls_Expediente_DAL Obj_Expediente_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
             Obj_Expediente_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Expediente_DAL.dtParametros);
 
