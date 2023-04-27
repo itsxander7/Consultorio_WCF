@@ -24,6 +24,7 @@ namespace DAL.MANTENIMIENTOS
         public string sPasswordUsuario { get => _sPasswordUsuario; set => _sPasswordUsuario = value; }
         public string sRol { get => _sRol; set => _sRol = value; }
         public string sMsjError { get => _sMsjError; set => _sMsjError = value; }
+        public uint uID_Usuario { get => _uID_Usuario; set => _uID_Usuario = value; }
         #endregion
     }
 }

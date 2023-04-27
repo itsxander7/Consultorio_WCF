@@ -168,31 +168,31 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.TextBox TxtIdUsuario;
 
         /// <summary>
-        /// Control BtnInsertar.
+        /// Control btnInsertar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnInsertar;
+        protected global::System.Web.UI.WebControls.Button btnInsertar;
 
         /// <summary>
-        /// Control BtnEditar.
+        /// Control btnEditar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEditar;
+        protected global::System.Web.UI.WebControls.Button btnEditar;
 
         /// <summary>
-        /// Control BtnEliminar.
+        /// Control btnEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEliminar;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
 
         /// <summary>
         /// Control BtnMostrar.

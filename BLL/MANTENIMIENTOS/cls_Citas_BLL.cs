@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
             if (Obj_Citas_DAL.iIdCita == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -63,7 +63,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -86,7 +86,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
             Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 

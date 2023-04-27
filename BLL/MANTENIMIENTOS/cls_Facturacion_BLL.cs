@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Facturas(ref cls_Facturacion_DAL Obj_Facturacion_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
             if (Obj_Facturacion_DAL.uID_Factura == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Facturas(ref cls_Facturacion_DAL Obj_Facturacion_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Facturas(ref cls_Facturacion_DAL Obj_Facturacion_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
             Obj_Facturacion_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Facturacion_DAL.dtParametros);
 
@@ -74,7 +74,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Facturas(ref cls_Facturacion_DAL Obj_Facturacion_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
             Obj_Facturacion_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Facturacion_DAL.dtParametros);
 

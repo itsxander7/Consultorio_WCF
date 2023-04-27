@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\DBConnection\Reference.cs">
+    <Compile Include="Connected Services\BD_Connection\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -66,20 +66,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\DBConnection\BD.wsdl" />
-    <None Include="Connected Services\DBConnection\WCF__BD.xsd">
+    <None Include="Connected Services\BD_Connection\BD.wsdl" />
+    <None Include="Connected Services\BD_Connection\WCF__BD.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\DBConnection\WCF__BD1.xsd">
+    <None Include="Connected Services\BD_Connection\WCF__BD1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\DBConnection\WCF__BD2.xsd">
+    <None Include="Connected Services\BD_Connection\WCF__BD2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\DBConnection\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
@@ -88,27 +85,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\DBConnection\WCF__BD.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\DBConnection\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\DBConnection\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\DBConnection\Reference.svcmap">
+    <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
+    <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
+    <None Include="Connected Services\BD_Connection\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="SCRIPTS_SQL\EDITAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\ELIMINAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\FILTRAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\GUARDAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\MOSTRAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\PROYECTOCONSULTORIO.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\BD_Connection\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
