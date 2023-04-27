@@ -8,7 +8,7 @@ using System.Configuration;
 
 namespace BLL.MANTENIMIENTOS
 {
-    class cls_Doctores_BLL
+    public class cls_Doctores_BLL
     {
 
         // LISTAR Y FILTRAR
