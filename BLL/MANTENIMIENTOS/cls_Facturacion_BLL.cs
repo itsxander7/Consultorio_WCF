@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BLL.MANTENIMIENTOS
 {
-    class cls_Facturacion_BLL
+    public class cls_Facturacion_BLL
     {
+
     }
 }
