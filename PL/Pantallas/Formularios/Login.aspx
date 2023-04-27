@@ -31,7 +31,7 @@
     </head>
     
     <body>
-        
+        <h1>
         <div id="contenedor">
             <div id="central">
                 <div id="login">
@@ -56,6 +56,7 @@
             </div>
         </div>
             
-    
+    </h1>
+
 </body></html>
 </asp:Content>
