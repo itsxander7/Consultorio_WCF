@@ -80,7 +80,7 @@
     <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" Font-Names="Arial" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar" Font-Names="Arial" OnClick="Button4_Click" />
+   <%-- <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar" Font-Names="Arial" OnClick="Button4_Click" />--%>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
