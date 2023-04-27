@@ -8,7 +8,7 @@ using DAL.MANTENIMIENTOS;
 
 namespace BLL.MANTENIMIENTOS
 {
-    class cls_Citas_BLL
+    public class cls_Citas_BLL
     {
 
         // LISTAR Y FILTRAR

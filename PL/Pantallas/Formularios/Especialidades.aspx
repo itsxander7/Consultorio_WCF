@@ -24,10 +24,10 @@
     <br><br><br>
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="BtnInsertar" runat="server" Text="Insertar" Font-Names="Arial" ForeColor="Black" />
+    <asp:Button ID="BtnInsertar" runat="server" Text="Insertar" Font-Names="Arial" ForeColor="Black" OnClick="BtnInsertar_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <asp:Button ID="BtnEditar" runat="server" Text="Editar" Font-Names="Arial" />
+    <asp:Button ID="BtnEditar" runat="server" Text="Editar" Font-Names="Arial" OnClick="BtnEditar_Click" />
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" Font-Names="Arial" />
