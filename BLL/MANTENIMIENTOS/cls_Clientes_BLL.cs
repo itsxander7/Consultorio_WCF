@@ -18,7 +18,7 @@ namespace BLL.MANTENIMIENTOS
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
 
-            if (Obj_Clientes_DAL.ID_CLIENTE == 0)
+            if (Obj_Clientes_DAL.IIdCliente == 0)
             {
                Obj_Clientes_DAL.DtParametros = null;
                 Obj_Clientes_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CLIENTES", ConfigurationManager.AppSettings["LISTAR_CLIENTES"], null);
@@ -27,14 +27,14 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-                Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente","1", Obj_Clientes_DAL.ID_CLIENTE);
+                Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente","1", Obj_Clientes_DAL.IIdCliente);
 
                 Obj_Clientes_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CLIENTES", ConfigurationManager.AppSettings["FILTRAR_CLIENTES"], Obj_Clientes_DAL.DtParametros);
             }
         }
 
         //GUARDAR Y ACTUALIZAR
-        public void Guardar_CLIENTES(ref cls_Clientes_DAL Obj_Clientes_DAL)
+        public void Guardar_Clientes(ref cls_Clientes_DAL Obj_Clientes_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
@@ -44,13 +44,13 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.ID_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.NOMBRE_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6",Obj_Clientes_DAL.APELLIDO1_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.APELLIDO2_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@direccion_cliente", "6", Obj_Clientes_DAL.DIRECCION_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@telefono_cliente", "6", Obj_Clientes_DAL.TELEFONO);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@correo_cliente", "6", Obj_Clientes_DAL.CORREO_CLIENTE);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.IIdCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.SNombreCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6",Obj_Clientes_DAL.SApellido1Cliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.SApellido2Cliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@direccion_cliente", "6", Obj_Clientes_DAL.SDireccionCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@telefono_cliente", "6", Obj_Clientes_DAL.STelefonoCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@correo_cliente", "6", Obj_Clientes_DAL.SCorreoCliente);
 
             
           
@@ -61,7 +61,7 @@ namespace BLL.MANTENIMIENTOS
             Obj_Clientes_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete( ConfigurationManager.AppSettings["GUARDAR_CLIENTES"], "NORMAL", Obj_Clientes_DAL.DtParametros);
         }
 
-        public void Modificar_CLIENTE(ref cls_Clientes_DAL Obj_Clientes_DAL)
+        public void Modificar_Clientes(ref cls_Clientes_DAL Obj_Clientes_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
@@ -70,13 +70,13 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.ID_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.NOMBRE_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6", Obj_Clientes_DAL.APELLIDO1_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.APELLIDO2_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@direccion_cliente", "6", Obj_Clientes_DAL.DIRECCION_CLIENTE);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@telefono_cliente", "6", Obj_Clientes_DAL.TELEFONO);
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@correo_cliente", "6", Obj_Clientes_DAL.CORREO_CLIENTE);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.IIdCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.SNombreCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6", Obj_Clientes_DAL.SApellido1Cliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.SApellido2Cliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@direccion_cliente", "6", Obj_Clientes_DAL.SDireccionCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@telefono_cliente", "6", Obj_Clientes_DAL.STelefonoCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@correo_cliente", "6", Obj_Clientes_DAL.SCorreoCliente);
 
 
 
@@ -87,13 +87,13 @@ namespace BLL.MANTENIMIENTOS
 
         //ELIMINAR
 
-        public void Eliminar_CLIENTES(ref cls_Clientes_DAL Obj_Clientes_DAL)
+        public void Eliminar_Clientes(ref cls_Clientes_DAL Obj_Clientes_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
             Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "1", Obj_Clientes_DAL.ID_CLIENTE);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "1", Obj_Clientes_DAL.IIdCliente);
 
             Obj_Clientes_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CLIENTES"], "NORMAL", Obj_Clientes_DAL.DtParametros);
         }
