@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BaseMantenimientos.Master.cs" Inherits="PL.Pantallas.Maestras.Base" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Salud Vida - Centro Médico</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="copyright" content="MACode ID, https://macodeid.com/">
+    <link rel="stylesheet" href="../../Recursos/css/maicons.css">
+    <link rel="stylesheet" href="../../Recursos/css/bootstrap.css">
+    <link rel="stylesheet" href="../../Recursos/vendor/owl-carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="../../Recursos/vendor/animate/animate.css">
+    <link rel="stylesheet" href="../../Recursos/css/theme.css">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 text-sm">
+                        <div class="site-info">
+                            <a href="#"><span class="mai-call text-primary"></span>+506 1234 5678</a>
+                            <span class="divider">|</span>
+                            <a href="#"><span class="mai-mail text-primary"></span>saludvida@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 text-right text-sm">
+                        <div class="social-mini-button">
+                            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+                            <a href="#"><span class="mai-logo-twitter"></span></a>
+                            <a href="#"><span class="mai-logo-dribbble"></span></a>
+                            <a href="#"><span class="mai-logo-instagram"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- .row -->
+            </div>
+            <!-- .container -->
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"><span class="text-primary">Mantenimientos</span></a>
+                <div class="collapse navbar-collapse" id="navbarSupport">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Index.aspx">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupport2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Citas.aspx">Citas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Clientes.aspx">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Doctores.aspx">Doctores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Especialidades.aspx">Especialidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Expedientes.aspx">Expedientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Facturas.aspx">Facturas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/MetodosPago.aspx">MetodosPago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Promociones.aspx">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Servicios.aspx">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Usuarios.aspx">Usuarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Formularios/Roles.aspx">Roles</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Aquí agrega el contenido dentro del ContentPlaceHolder1 -->
+    <!-- -->
+    <!-- -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row px-md-3">
+                <div class="col-sm-6 col-lg-3 py-3">
+                    <h5>Contactos</h5>
+                    <p class="footer-link mt-2">San José, Costa Rica.</p>
+                    <a href="#" class="footer-link">+506 1234 5678</a>
+                    <a href="#" class="footer-link">saludvida@gmail.com</a>
+                </div>
+                <div class="col-sm-6 col-lg-3 py-3">
+                    <h5>Redes Sociales</h5>
+                    <div class="footer-sosmed mt-3">
+                        <a href="#" target="_blank"><span class="mai-logo-facebook-f"></span></a>
+                        <a href="#" target="_blank"><span class="mai-logo-twitter"></span></a>
+                        <a href="#" target="_blank"><span class="mai-logo-google-plus-g"></span></a>
+                        <a href="#" target="_blank"><span class="mai-logo-instagram"></span></a>
+                        <a href="#" target="_blank"><span class="mai-logo-linkedin"></span></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p id="copyright">Copyright &copy; 2020 <a href="https://macodeid.com/" target="_blank">MACode ID</a>. All right reserved</p>
+        </div>
+    </footer>
+
+    <script src="../../Recursos/js/jquery-3.5.1.min.js"></script>
+    <script src="../../Recursos/js/bootstrap.bundle.min.js"></script>
+    <script src="../../Recursos/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="../../Recursos/vendor/wow/wow.min.js"></script>
+    <script src="../../Recursos/js/theme.js"></script>
+</body>
+</html>
