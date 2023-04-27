@@ -18,18 +18,18 @@ namespace BLL.MANTENIMIENTOS
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
 
-            if (Obj_Citas_DAL.IIdCita == 0)
+            if (Obj_Citas_DAL.iIdCita == 0)
             {
-                Obj_Citas_DAL.DtParametros = null;
-                Obj_Citas_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CLIENTES", ConfigurationManager.AppSettings["LISTAR_CITAS"], null);
+                Obj_Citas_DAL.dtParametros = null;
+                Obj_Citas_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CLIENTES", ConfigurationManager.AppSettings["LISTAR_CITAS"], null);
             }
             else
             {
-                Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
+                Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 
-                Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.IIdCita);
+                Obj_Citas_DAL.dtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.iIdCita);
 
-                Obj_Citas_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CITAS", ConfigurationManager.AppSettings["FILTRAR_CITAS"], Obj_Citas_DAL.DtParametros);
+                Obj_Citas_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.CITAS", ConfigurationManager.AppSettings["FILTRAR_CITAS"], Obj_Citas_DAL.dtParametros);
             }
         }
 
@@ -42,13 +42,13 @@ namespace BLL.MANTENIMIENTOS
 
 
 
-            Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.IIdCita);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.IIdCliente);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.IIdEspecialidad);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.IIdDoctor);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.DtFecha);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.iIdCita);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.iIdCliente);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.iIdEspecialidad);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.iIdDoctor);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.dtFecha);
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Citas_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_CITAS"], "NORMAL", Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_CITAS"], "NORMAL", Obj_Citas_DAL.dtParametros);
         }
 
         public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
@@ -67,17 +67,17 @@ namespace BLL.MANTENIMIENTOS
 
 
 
-            Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.IIdCita);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.IIdCliente);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.IIdEspecialidad);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.IIdDoctor);
-            Obj_Citas_DAL.DtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.DtFecha);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_cita", "6", Obj_Citas_DAL.iIdCita);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_cliente", "6", Obj_Citas_DAL.iIdCliente);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_especialidad", "6", Obj_Citas_DAL.iIdEspecialidad);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_doctor", "6", Obj_Citas_DAL.iIdDoctor);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.dtFecha);
 
 
 
-            Obj_Citas_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_CITAS"], "NORMAL", Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_CITAS"], "NORMAL", Obj_Citas_DAL.dtParametros);
 
 
         }
@@ -88,11 +88,11 @@ namespace BLL.MANTENIMIENTOS
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
-            Obj_Citas_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 
-            Obj_Citas_DAL.DtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.IIdCita);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@id_cita", "1", Obj_Citas_DAL.iIdCita);
 
-            Obj_Citas_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CITAS"], "NORMAL", Obj_Citas_DAL.DtParametros);
+            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CITAS"], "NORMAL", Obj_Citas_DAL.dtParametros);
         }
     }
 }

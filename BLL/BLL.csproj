@@ -54,6 +54,7 @@
     <Compile Include="MANTENIMIENTOS\cls_Doctores_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Especialidades_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Expediente_BLL.cs" />
+    <Compile Include="MANTENIMIENTOS\cls_Facturacion_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Promociones_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_regiones_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Servicios_BLL.cs" />
