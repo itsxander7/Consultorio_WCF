@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Usuario(ref cls_Usuario_DAL Obj_Usuario_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
             if (Obj_Usuario_DAL.uID_Usuario == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Usuario(ref cls_Usuario_DAL Obj_Usuario_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Usuario(ref cls_Usuario_DAL Obj_Usuario_DAL)
         {
 
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
 
@@ -78,7 +78,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Usuario(ref cls_Usuario_DAL Obj_Usuario_DAL)
         {
-            DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
+            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
             Obj_Usuario_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Usuario_DAL.dtParametros);
 
