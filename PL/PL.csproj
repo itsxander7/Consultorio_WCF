@@ -108,6 +108,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="bin\BLL.dll.config" />
+    <Content Include="bin\PL.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <None Include="Connected Services\DBConnection\BD.wsdl" />
     <None Include="Connected Services\DBConnection\WCF__BD.xsd">
       <SubType>Designer</SubType>
@@ -125,6 +137,68 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\Antlr3.Runtime.pdb" />
+    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
+    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
+    <Content Include="bin\BLL.dll" />
+    <Content Include="bin\BLL.pdb" />
+    <Content Include="bin\DAL.dll" />
+    <Content Include="bin\DAL.pdb" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
+    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.xml" />
+    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
+    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\PL.dll" />
+    <Content Include="bin\PL.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Optimization.xml" />
+    <Content Include="bin\WebGrease.dll" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -143,13 +217,62 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="PANTALLAS\Formularios\FRM_Doctores.aspx" />
-    <Content Include="PANTALLAS\Formularios\FRM_Especialidades.aspx" />
+    <Content Include="Pantallas\Formularios\Citas.aspx" />
+    <Content Include="Pantallas\Formularios\Clientes.aspx" />
+    <Content Include="Pantallas\Formularios\Doctores.aspx" />
+    <Content Include="Pantallas\Formularios\Especialidades.aspx" />
+    <Content Include="Pantallas\Formularios\Expedientes.aspx" />
+    <Content Include="Pantallas\Formularios\Facturas.aspx" />
+    <Content Include="Pantallas\Formularios\Index.aspx" />
+    <Content Include="Pantallas\Formularios\Login.aspx" />
+    <Content Include="Pantallas\Formularios\Mantenimientos.aspx" />
+    <Content Include="Pantallas\Formularios\MetodosPago.aspx" />
+    <Content Include="Pantallas\Formularios\Nosotros.aspx" />
+    <Content Include="Pantallas\Formularios\Promociones.aspx" />
+    <Content Include="Pantallas\Formularios\Roles.aspx" />
+    <Content Include="Pantallas\Formularios\Servicios.aspx" />
+    <Content Include="Pantallas\Formularios\Usuarios.aspx" />
     <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
-    <Content Include="PANTALLAS\Maestras\BaseLogin.Master" />
-    <Content Include="PANTALLAS\Maestras\Main.Master" />
-    <Content Include="PANTALLAS\Maestras\BaseMantenimientos.Master" />
+    <Content Include="Pantallas\Maestras\BaseLogin.Master" />
+    <Content Include="Pantallas\Maestras\Main.Master" />
+    <Content Include="Pantallas\Maestras\BaseMantenimientos.Master" />
+    <Content Include="Recursos\fonts\maicons.eot" />
+    <Content Include="Recursos\fonts\maicons.ttf" />
+    <Content Include="Recursos\fonts\maicons.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Recursos\css\bootstrap.css" />
+    <Content Include="Recursos\css\maicons.css" />
+    <Content Include="Recursos\css\theme.css" />
+    <Content Include="Recursos\fonts\maicons.svg" />
+    <Content Include="Recursos\img\ajax-loader.gif" />
+    <Content Include="Recursos\img\app_store.svg" />
+    <Content Include="Recursos\img\banner-pattern.svg" />
+    <Content Include="Recursos\img\bg-doctor.png" />
+    <Content Include="Recursos\img\bg_image_1.jpg" />
+    <Content Include="Recursos\img\blog\blog_1.jpg" />
+    <Content Include="Recursos\img\blog\blog_2.jpg" />
+    <Content Include="Recursos\img\blog\blog_3.jpg" />
+    <Content Include="Recursos\img\blog\blog_4.jpg" />
+    <Content Include="Recursos\img\blog\blog_5.jpg" />
+    <Content Include="Recursos\img\doctors\doctor_1.jpg" />
+    <Content Include="Recursos\img\doctors\doctor_2.jpg" />
+    <Content Include="Recursos\img\doctors\doctor_3.jpg" />
+    <Content Include="Recursos\img\google_play.svg" />
+    <Content Include="Recursos\img\mobile_app.png" />
+    <Content Include="Recursos\img\person\person_1.jpg" />
+    <Content Include="Recursos\img\person\person_2.jpg" />
+    <Content Include="Recursos\img\person\person_3.jpg" />
+    <Content Include="Recursos\img\person\person_4.jpg" />
+    <Content Include="Recursos\js\bootstrap.bundle.min.js" />
+    <Content Include="Recursos\js\google-maps.js" />
+    <Content Include="Recursos\js\jquery-3.5.1.min.js" />
+    <Content Include="Recursos\js\theme.js" />
+    <Content Include="Recursos\vendor\animate\animate.css" />
+    <Content Include="Recursos\vendor\owl-carousel\ajax-loader.gif" />
+    <Content Include="Recursos\vendor\owl-carousel\css\owl.carousel.css" />
+    <Content Include="Recursos\vendor\owl-carousel\js\owl.carousel.js" />
+    <Content Include="Recursos\vendor\owl-carousel\js\owl.carousel.min.js" />
+    <Content Include="Recursos\vendor\wow\wow.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -216,39 +339,130 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="PANTALLAS\Formularios\FRM_Doctores.aspx.cs">
-      <DependentUpon>FRM_Doctores.aspx</DependentUpon>
+    <Compile Include="Pantallas\Formularios\Citas.aspx.cs">
+      <DependentUpon>Citas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PANTALLAS\Formularios\FRM_Doctores.aspx.designer.cs">
-      <DependentUpon>FRM_Doctores.aspx</DependentUpon>
+    <Compile Include="Pantallas\Formularios\Citas.aspx.designer.cs">
+      <DependentUpon>Citas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PANTALLAS\Formularios\FRM_Especialidades.aspx.cs">
-      <DependentUpon>FRM_Especialidades.aspx</DependentUpon>
+    <Compile Include="Pantallas\Formularios\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PANTALLAS\Formularios\FRM_Especialidades.aspx.designer.cs">
-      <DependentUpon>FRM_Especialidades.aspx</DependentUpon>
+    <Compile Include="Pantallas\Formularios\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\BaseLogin.Master.cs">
+    <Compile Include="Pantallas\Formularios\Doctores.aspx.cs">
+      <DependentUpon>Doctores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Doctores.aspx.designer.cs">
+      <DependentUpon>Doctores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Especialidades.aspx.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Especialidades.aspx.designer.cs">
+      <DependentUpon>Especialidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Expedientes.aspx.cs">
+      <DependentUpon>Expedientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Expedientes.aspx.designer.cs">
+      <DependentUpon>Expedientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Facturas.aspx.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Facturas.aspx.designer.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Mantenimientos.aspx.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Mantenimientos.aspx.designer.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\MetodosPago.aspx.cs">
+      <DependentUpon>MetodosPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\MetodosPago.aspx.designer.cs">
+      <DependentUpon>MetodosPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Nosotros.aspx.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Nosotros.aspx.designer.cs">
+      <DependentUpon>Nosotros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Promociones.aspx.cs">
+      <DependentUpon>Promociones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Promociones.aspx.designer.cs">
+      <DependentUpon>Promociones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Maestras\BaseLogin.Master.cs">
       <DependentUpon>BaseLogin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\BaseLogin.Master.designer.cs">
+    <Compile Include="Pantallas\Maestras\BaseLogin.Master.designer.cs">
       <DependentUpon>BaseLogin.Master</DependentUpon>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\BaseMantenimientos.Master.cs">
+    <Compile Include="Pantallas\Maestras\BaseMantenimientos.Master.cs">
       <DependentUpon>BaseMantenimientos.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\BaseMantenimientos.Master.designer.cs">
+    <Compile Include="Pantallas\Maestras\BaseMantenimientos.Master.designer.cs">
       <DependentUpon>BaseMantenimientos.Master</DependentUpon>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\Main.Master.cs">
+    <Compile Include="Pantallas\Maestras\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PANTALLAS\Maestras\Main.Master.designer.cs">
+    <Compile Include="Pantallas\Maestras\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
