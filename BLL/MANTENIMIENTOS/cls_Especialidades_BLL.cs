@@ -12,13 +12,13 @@ namespace BLL.MANTENIMIENTOS
     {
 
         // LISTAR Y FILTRAR
-        public void List_ESPECIALIDADES(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
+        public void List_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
 
-            if (Obj_Especialidad_DAL.ID_ESPECIALIDAD == 0)
+            if (Obj_Especialidad_DAL.IIdEspecialidad == 0)
             {
                 Obj_Especialidad_DAL.DtParametros = null;
                 Obj_Especialidad_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["LISTAR_ESPECIALIDADES"], null);
@@ -27,14 +27,14 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-                Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.ID_ESPECIALIDAD);
+                Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
 
                 Obj_Especialidad_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["FILTRAR_ESPECIALIDADES"], Obj_Especialidad_DAL.DtParametros);
             }
         }
 
         //GUARDAR Y ACTUALIZAR
-        public void Guardar_ESPECIALIDADES(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
+        public void Guardar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
@@ -44,8 +44,8 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.ID_ESPECIALIDAD);
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.NOMBRE_ESPECIALIDAD);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
             Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
         }
 
-        public void Modificar_ESPECIALIDADES(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
+        public void Modificar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
 
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
@@ -66,8 +66,8 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.ID_ESPECIALIDAD);
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.NOMBRE_ESPECIALIDAD);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 
 
@@ -78,13 +78,13 @@ namespace BLL.MANTENIMIENTOS
 
         //ELIMINAR
 
-        public void Eliminar_ESPECIALIDADES(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
+        public void Eliminar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
             DBConnection.BDClient OBJ_WCF = new DBConnection.BDClient();
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.ID_ESPECIALIDAD);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
 
             Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
         }
