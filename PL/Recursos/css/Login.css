@@ -1,0 +1,10 @@
+﻿body {
+
+
+}
+h1 {
+    text-align: center;
+    display: flex; /*Permitir el uso de flexbox*/
+    justify-content: center; /*Centrar horizontalmente el contenido*/
+    align-items: center; /*Centrar verticalmente el contenido*/
+}
