@@ -50,8 +50,7 @@
                         <a href="#">¿No tienes Cuenta? Registrate</a>
                     </div>
                 </div>
-                <div class="inferior">
-                    <a href="../Formularios/Index.aspx">Volver</a>
+               
                 </div>
             </div>
         </div>

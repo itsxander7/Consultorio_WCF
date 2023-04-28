@@ -225,6 +225,7 @@
     <Content Include="Pantallas\Maestras\BaseLogin.Master" />
     <Content Include="Pantallas\Maestras\Main.Master" />
     <Content Include="Pantallas\Maestras\BaseMantenimientos.Master" />
+    <Content Include="Recursos\css\Clientes.css" />
     <Content Include="Recursos\css\Login.css" />
     <Content Include="Recursos\fonts\maicons.eot" />
     <Content Include="Recursos\fonts\maicons.ttf" />

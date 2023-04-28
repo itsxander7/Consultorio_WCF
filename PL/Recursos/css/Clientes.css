@@ -1,0 +1,35 @@
+﻿#contenedor {
+    background-color: white;
+    border: 2px solid #FF0000;
+}
+
+#cabecera {
+    background-color: white;
+    height: 20%;
+}
+
+#menu {
+    height: 10%;
+    background-color: white;
+}
+
+#izquierda {
+    height: 490px;
+    background-color: white;
+    float: left;
+    width: 35%;
+}
+
+#derecha {
+    align-items: center;
+    height: 50%;
+    background-color: white;
+    float: right;
+    width: 64%;
+}
+
+#pie {
+    height: 20%;
+    background-color: white;
+    clear: both;
+}

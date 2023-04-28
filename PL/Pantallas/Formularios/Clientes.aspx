@@ -2,13 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h2  ALIGN=center>
-<br />
-      
-
-     <p ALIGN=center> 
-
-    <link href="../../Recursos/css/Cliente.css" rel="stylesheet" />
+ 	<link href="../../Recursos/css/Clientes.css" rel="stylesheet" />
 	
 		<div id ="contenedor">
 			<div id ="cabecera"></div>
@@ -54,10 +48,7 @@
      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
     <asp:TextBox ID="txt_Correo" runat="server"></asp:TextBox>
     <br /><br />
-             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                <asp:Button ID="btn_Agregar" runat="server" Text="Agregar"  /> &nbsp; 
-                <asp:Button ID="btn_modificar" runat="server" Text="Modificar" /> &nbsp; 
-                <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar"  />
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <asp:Button ID="btn_Agregar" runat="server" Text="Agregar" BackColor="#CCCCCC" ForeColor="Black" Width="100px" /> &nbsp; <asp:Button ID="btn_modificar" runat="server" Text="Modificar" BackColor="#CCCCCC" Width="100px" /> &nbsp; <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" BackColor="#CCCCCC" Height="35px" Width="99px" />
 
 			</div> 
 			<div id ="derecha">
@@ -68,6 +59,6 @@
 			</div>
 			<div id ="pie"></div>
 		</div>
-         </h2>
 
+    
 </asp:Content>
