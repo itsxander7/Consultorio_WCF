@@ -12,7 +12,7 @@
         <br />
         &nbsp;&nbsp;
                
-            <asp:GridView ID="GridViewfactura" runat="server"></asp:GridView>
+            <asp:GridView ID="GridViewfactura" runat="server" HorizontalAlign="Center"></asp:GridView>
 
     </p>
 
