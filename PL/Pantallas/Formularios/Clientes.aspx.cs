@@ -15,7 +15,7 @@ namespace PL.Pantallas.Formularios
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            CargarDatos();
         }
 
         protected void btn_Agregar_Click(object sender, EventArgs e)
@@ -56,6 +56,9 @@ namespace PL.Pantallas.Formularios
                 Obj_Clientes_BLL.Guardar_Clientes(ref Obj_Clientes_DAL);
 
             }
+            txt_IdCliente.Text = ""; txt_NombreCliente.Text = ""; txt_PrimerApellido.Text = ""; txt_SegundoApellido.Text = ""; txt_Direccion.Text = ""; txt_Telefono.Text = "";
+            txt_Correo.Text = "";
+            CargarDatos();
         }
         protected void btn_modificar_Click(object sender, EventArgs e)
         {
@@ -71,6 +74,10 @@ namespace PL.Pantallas.Formularios
             Obj_Clientes_DAL.STelefonoCliente = txt_Telefono.Text.Trim();
             Obj_Clientes_DAL.SCorreoCliente = txt_Correo.Text.Trim();
             Obj_Clientes_BLL.Modificar_Clientes(ref Obj_Clientes_DAL);
+
+            txt_IdCliente.Text = ""; txt_NombreCliente.Text = ""; txt_PrimerApellido.Text = ""; txt_SegundoApellido.Text = ""; txt_Direccion.Text = ""; txt_Telefono.Text = "";
+            txt_Correo.Text = "";
+            CargarDatos();
         }
 
         protected void btn_eliminar_Click(object sender, EventArgs e)
@@ -80,6 +87,10 @@ namespace PL.Pantallas.Formularios
 
             Obj_Clientes_DAL.IIdCliente = Convert.ToInt32(txt_IdCliente.Text.Trim());
             Obj_Clientes_BLL.Eliminar_Clientes(ref Obj_Clientes_DAL);
+
+            txt_IdCliente.Text = ""; txt_NombreCliente.Text = ""; txt_PrimerApellido.Text = ""; txt_SegundoApellido.Text = ""; txt_Direccion.Text = ""; txt_Telefono.Text = "";
+            txt_Correo.Text = "";
+            CargarDatos();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -93,9 +104,27 @@ namespace PL.Pantallas.Formularios
 
         protected void txt_IdCliente_TextChanged(object sender, EventArgs e)
         {
-          
-               
-        
+                  
+        }
+        private void CargarDatos()
+        {
+            cls_Clientes_DAL Obj_Clientes_DAL = new cls_Clientes_DAL();
+            cls_Clientes_BLL Obj_Clientes_BLL = new cls_Clientes_BLL();
+
+            if (txt_IdCliente.Text.Trim() != "")
+            {
+                Obj_Clientes_DAL.IIdCliente = Convert.ToInt32(txt_IdCliente.Text);
+            }
+            else
+            {
+                Obj_Clientes_DAL.IIdCliente = 0;
+            }
+
+            Obj_Clientes_BLL.List_Clientes(ref Obj_Clientes_DAL);
+            GridView1.DataSource = null;
+            GridView1.DataSource = Obj_Clientes_DAL.DtDatos;
+            GridView1.DataBind();
+
         }
     }
 }

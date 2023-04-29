@@ -182,6 +182,7 @@
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="bin\WebGrease.dll" />
+    <None Include="Connected Services\BD_Connection\BD1.wsdl" />
     <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
     <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
     <None Include="Connected Services\BD_Connection\Reference.svcmap">
@@ -230,14 +231,13 @@
     <Content Include="Recursos\fonts\maicons.eot" />
     <Content Include="Recursos\fonts\maicons.ttf" />
     <Content Include="Recursos\fonts\maicons.woff" />
-    <None Include="Connected Services\BD_Connection\BD.wsdl" />
-    <None Include="Connected Services\BD_Connection\WCF__BD.xsd">
+    <None Include="Connected Services\BD_Connection\WCF__BD3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD1.xsd">
+    <None Include="Connected Services\BD_Connection\WCF__BD31.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD2.xsd">
+    <None Include="Connected Services\BD_Connection\WCF__BD32.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
