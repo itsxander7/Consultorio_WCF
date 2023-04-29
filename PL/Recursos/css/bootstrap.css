@@ -247,6 +247,7 @@ button,
 input {
   overflow: visible;
     margin-left: 0px;
+    margin-top: 0px;
 }
 
 button,
@@ -260,6 +261,8 @@ select {
 
 select {
   word-wrap: normal;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 button,

@@ -218,7 +218,6 @@
     <Content Include="Pantallas\Formularios\Login.aspx" />
     <Content Include="Pantallas\Formularios\Mantenimientos.aspx" />
     <Content Include="Pantallas\Formularios\MetodosPago.aspx" />
-    <Content Include="Pantallas\Formularios\Nosotros.aspx" />
     <Content Include="Pantallas\Formularios\Promociones.aspx" />
     <Content Include="Pantallas\Formularios\Roles.aspx" />
     <Content Include="Pantallas\Formularios\Servicios.aspx" />
@@ -229,6 +228,7 @@
     <Content Include="Pantallas\Maestras\BaseMantenimientos.Master" />
     <Content Include="Recursos\css\Clientes.css" />
     <Content Include="Recursos\css\Login.css" />
+    <Content Include="Recursos\css\SaludVida.css" />
     <Content Include="Recursos\fonts\maicons.eot" />
     <Content Include="Recursos\fonts\maicons.ttf" />
     <Content Include="Recursos\fonts\maicons.woff" />
@@ -417,13 +417,6 @@
     </Compile>
     <Compile Include="Pantallas\Formularios\MetodosPago.aspx.designer.cs">
       <DependentUpon>MetodosPago.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\Formularios\Nosotros.aspx.cs">
-      <DependentUpon>Nosotros.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\Formularios\Nosotros.aspx.designer.cs">
-      <DependentUpon>Nosotros.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Formularios\Promociones.aspx.cs">
       <DependentUpon>Promociones.aspx</DependentUpon>
