@@ -121,9 +121,9 @@ namespace PL.Pantallas.Formularios
             }
 
             Obj_Clientes_BLL.List_Clientes(ref Obj_Clientes_DAL);
-            GridView1.DataSource = null;
-            GridView1.DataSource = Obj_Clientes_DAL.DtDatos;
-            GridView1.DataBind();
+            dgvClientes.DataSource = null;
+            dgvClientes.DataSource = Obj_Clientes_DAL.DtDatos;
+            dgvClientes.DataBind();
 
         }
     }

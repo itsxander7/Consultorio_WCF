@@ -17,7 +17,7 @@ namespace PL.Pantallas.Formularios
         {
             if (!Page.IsPostBack)
             {
-                Txt_Filtrar.Text = string.Empty;
+                txtFiltrar.Text = string.Empty;
                 CargarDatos();
 
             }
@@ -26,9 +26,9 @@ namespace PL.Pantallas.Formularios
         #region Metodo
         private void CargarDatos()
         {
-            if (Txt_Filtrar.Text.Trim() != "")
+            if (txtFiltrar.Text.Trim() != "")
             {
-                Obj_Citas_DAL.iIdCita = int.Parse(Txt_Filtrar.Text);
+                Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
             }
             else
             {
@@ -40,9 +40,9 @@ namespace PL.Pantallas.Formularios
 
             Obj_Citas_BLL.List_Citas(ref Obj_Citas_DAL);
 
-            GridViewCitas.DataSource = null;
-            GridViewCitas.DataSource = Obj_Citas_DAL.dtDatos;
-            GridViewCitas.DataBind();
+            gdvCitas.DataSource = null;
+            gdvCitas.DataSource = Obj_Citas_DAL.dtDatos;
+            gdvCitas.DataBind();
         }
         #endregion
         protected void btnFiltar_Click(object sender, EventArgs e)
@@ -91,7 +91,7 @@ namespace PL.Pantallas.Formularios
             Txt_Especialidad.Text = string.Empty;
             Txt_Doctor.Text = string.Empty;
             Txt_Fecha.Text = string.Empty;
-            Txt_Filtrar.Text = string.Empty;
+            txtFiltrar.Text = string.Empty;
             CargarDatos();
 
 
@@ -99,7 +99,7 @@ namespace PL.Pantallas.Formularios
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            Obj_Citas_DAL.iIdCita = int.Parse(Txt_Filtrar.Text);
+            Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
             Obj_Citas_DAL.iIdCliente = int.Parse(Txt_Cliente.Text);
             Obj_Citas_DAL.iIdEspecialidad = int.Parse(Txt_Especialidad.Text);
             Obj_Citas_DAL.iIdDoctor = int.Parse(Txt_Doctor.Text);
@@ -111,18 +111,18 @@ namespace PL.Pantallas.Formularios
             Txt_Especialidad.Text = string.Empty;
             Txt_Doctor.Text = string.Empty;
             Txt_Fecha.Text = string.Empty;
-            Txt_Filtrar.Text = string.Empty;
+            txtFiltrar.Text = string.Empty;
             CargarDatos();
 
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
         {
-            Obj_Citas_DAL.iIdCita = int.Parse(Txt_Filtrar.Text);
+            Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
 
             Obj_Citas_BLL.Eliminar_Citas(ref Obj_Citas_DAL);
 
-            Txt_Filtrar.Text = string.Empty;
+            txtFiltrar.Text = string.Empty;
             CargarDatos();
         }
     }

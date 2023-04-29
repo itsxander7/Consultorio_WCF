@@ -38,5 +38,8 @@ label {
     display: block;
     box-sizing: border-box;
 }
-
-
+p{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
