@@ -11,6 +11,7 @@ namespace BLL.MANTENIMIENTOS
     public class cls_Citas_BLL
     {
 
+        #region Metodos
         // LISTAR Y FILTRAR
         public void List_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
@@ -83,5 +84,6 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CITAS"], "NORMAL", Obj_Citas_DAL.dtParametros);
         }
+        #endregion
     }
 }
