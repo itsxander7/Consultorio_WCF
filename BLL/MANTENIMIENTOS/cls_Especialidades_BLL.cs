@@ -44,7 +44,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
             Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 
@@ -54,7 +54,7 @@ namespace BLL.MANTENIMIENTOS
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
+            Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
         }
 
         public void Modificar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
@@ -66,7 +66,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
             Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 

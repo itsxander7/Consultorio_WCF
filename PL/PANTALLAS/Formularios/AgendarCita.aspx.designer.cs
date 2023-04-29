@@ -11,7 +11,7 @@ namespace PL.Pantallas.Formularios
 {
 
 
-    public partial class Mantenimientos
+    public partial class AgendarCita
     {
     }
 }

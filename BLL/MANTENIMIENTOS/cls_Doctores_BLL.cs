@@ -44,14 +44,14 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Doctores_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Doctores_DAL.DtParametros);
 
-            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_doctor", "6", Obj_Doctores_DAL.IIdDoctor);
-            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Doctores_DAL.IIdEspecialidad);
+            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_doctor", "1", Obj_Doctores_DAL.IIdDoctor);
+            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Doctores_DAL.IIdEspecialidad);
             Obj_Doctores_DAL.DtParametros.Rows.Add("@nombre_doctor", "6", Obj_Doctores_DAL.SNombreDoctor);
             Obj_Doctores_DAL.DtParametros.Rows.Add("@apellido1_doctor", "6", Obj_Doctores_DAL.SApellido1Doctor);
             Obj_Doctores_DAL.DtParametros.Rows.Add("@apellido2_doctor", "6", Obj_Doctores_DAL.SApellido2Doctor);
             Obj_Doctores_DAL.DtParametros.Rows.Add("@telefono_doctor", "6", Obj_Doctores_DAL.STelefonoDoctor);
             Obj_Doctores_DAL.DtParametros.Rows.Add("@correo_doctor", "6", Obj_Doctores_DAL.SCorreoDoctor);
-            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_usuario", "6", Obj_Doctores_DAL.IIdDoctor);
+            Obj_Doctores_DAL.DtParametros.Rows.Add("@id_usuario", "1", Obj_Doctores_DAL.IIdDoctor);
 
 
 

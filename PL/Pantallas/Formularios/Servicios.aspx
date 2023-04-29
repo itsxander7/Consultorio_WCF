@@ -12,7 +12,7 @@
           <br />
          &nbsp;&nbsp;
          <asp:Label ID="Label1" runat="server" Text="Seleccione el ID de la Especialidad: "></asp:Label>&nbsp;&nbsp;
-         <asp:DropDownList ID="DropDownListEspecialidad" runat="server"></asp:DropDownList>
+         <asp:TextBox ID="txtIdespecialidad" runat="server"></asp:TextBox>
          <br />
           <br />
          &nbsp;&nbsp;
@@ -26,10 +26,10 @@
          <br />
           <br />
          &nbsp;&nbsp;
-          <asp:Button ID="btnAgregar" runat="server" Text="Agreagar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Button ID="btnFiltar" runat="server" Text="Filtrar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <asp:Button ID="btnEditar" runat="server" Text="Editar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <asp:Button ID="btnBorrar" runat="server" Text="Borrar" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Button ID="btnAgregar" runat="server" Text="Agreagar" OnClick="btnAgregar_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Button ID="btnFiltar" runat="server" Text="Filtrar" OnClick="btnFiltar_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClick="btnEditar_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <asp:Button ID="btnBorrar" runat="server" Text="Borrar" OnClick="btnBorrar_Click" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <br />
           <br />
          <asp:GridView ID="GridViewServicios" runat="server"></asp:GridView>

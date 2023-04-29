@@ -11,7 +11,7 @@ namespace PL.Pantallas.Maestras
 {
 
 
-    public partial class Main
+    public partial class BaseLogin
     {
 
         /// <summary>

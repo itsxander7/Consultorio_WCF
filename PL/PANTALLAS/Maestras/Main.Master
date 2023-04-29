@@ -94,7 +94,7 @@
             <div class="container text-center wow zoomIn">
                 <span class="subhead">Ayudamos a mejorar tu vida</span>
                 <h1 class="display-4">Salud Vida</h1>
-                <a href="#" class="btn btn-primary">Agendar Cita</a>
+                <a href="../Formularios/AgendarCita.aspx" class="btn btn-primary">Agendar Cita</a>
             </div>
         </div>
     </div>

@@ -24,7 +24,7 @@ namespace PL.Pantallas.Formularios
             cls_Promociones_BLL Obj_Promo_BLL = new cls_Promociones_BLL();
 
 
-            //Obj_Promo_DAL.uID_Promocion = Convert.ToUInt32(txt_IdPromocion.Text.Trim());
+           // Obj_Promo_DAL.uID_Promocion = Convert.ToUInt32(txt_IdPromocion.Text.Trim());
             Obj_Promo_DAL.sDetallePromocion = txt_Detalle.Text.Trim();
             Obj_Promo_DAL.fMontoPromocion = float.Parse(txt_Monto.Text.Trim());
             Obj_Promo_DAL.uID_Servicio = Convert.ToUInt32(txt_Servicio.Text.Trim());

@@ -27,7 +27,7 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Servicio_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Servicio_DAL.dtParametros);
 
-                Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "2", Obj_Servicio_DAL.uID_Servicio);
+                Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "1", Obj_Servicio_DAL.uID_Servicio);
 
                 Obj_Servicio_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.Servicio", ConfigurationManager.AppSettings["FILTRAR_SERVICIO"], Obj_Servicio_DAL.dtParametros);
             }
@@ -44,8 +44,8 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Servicio_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Servicio_DAL.dtParametros);
 
-            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "2", Obj_Servicio_DAL.uID_Servicio);
-            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdEspecialidad", "2", Obj_Servicio_DAL.uID_Especialidad);
+            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "1", Obj_Servicio_DAL.uID_Servicio);
+            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdEspecialidad", "1", Obj_Servicio_DAL.uID_Especialidad);
             Obj_Servicio_DAL.dtParametros.Rows.Add("@DetalleServicio", "8", Obj_Servicio_DAL.sDetalleServicio);
             Obj_Servicio_DAL.dtParametros.Rows.Add("@CostoServicio", "6", Obj_Servicio_DAL.fCostoServicio);
 
@@ -63,8 +63,8 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Servicio_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Servicio_DAL.dtParametros);
 
-            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "2", Obj_Servicio_DAL.uID_Servicio);
-            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdEspecialidad", "2", Obj_Servicio_DAL.uID_Especialidad);
+            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "1", Obj_Servicio_DAL.uID_Servicio);
+            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdEspecialidad", "1", Obj_Servicio_DAL.uID_Especialidad);
             Obj_Servicio_DAL.dtParametros.Rows.Add("@DetalleServicio", "8", Obj_Servicio_DAL.sDetalleServicio);
             Obj_Servicio_DAL.dtParametros.Rows.Add("@CostoServicio", "6", Obj_Servicio_DAL.fCostoServicio);
 

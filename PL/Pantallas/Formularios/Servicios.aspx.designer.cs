@@ -24,13 +24,13 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control DropDownListEspecialidad.
+        /// Control txtIdespecialidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListEspecialidad;
+        protected global::System.Web.UI.WebControls.TextBox txtIdespecialidad;
 
         /// <summary>
         /// Control Label2.

@@ -65,7 +65,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             
-                            <a class="nav-link" href="../Formularios/Mantenimientos.aspx">Iniciar Sesion</a>
+                            <a class="nav-link" href="../Formularios/Index.aspx">Inicio</a>
                         </li>
                     </ul>
                 </div>
