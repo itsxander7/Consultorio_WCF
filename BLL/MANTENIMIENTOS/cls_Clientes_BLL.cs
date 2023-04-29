@@ -44,7 +44,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.IIdCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "1", Obj_Clientes_DAL.IIdCliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.SNombreCliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6",Obj_Clientes_DAL.SApellido1Cliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.SApellido2Cliente);
@@ -70,7 +70,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Clientes_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Clientes_DAL.DtParametros);
 
-            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "6", Obj_Clientes_DAL.IIdCliente);
+            Obj_Clientes_DAL.DtParametros.Rows.Add("@id_cliente", "1", Obj_Clientes_DAL.IIdCliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@nombre_cliente", "6", Obj_Clientes_DAL.SNombreCliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido1_cliente", "6", Obj_Clientes_DAL.SApellido1Cliente);
             Obj_Clientes_DAL.DtParametros.Rows.Add("@apellido2_cliente", "6", Obj_Clientes_DAL.SApellido2Cliente);
@@ -97,9 +97,6 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Clientes_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_CLIENTES"], "NORMAL", Obj_Clientes_DAL.DtParametros);
         }
-
-
-
 
     }
 }

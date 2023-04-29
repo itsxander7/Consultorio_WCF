@@ -14,7 +14,7 @@
 }
 
 #izquierda {
-    height: 490px;
+    height: 606px;
     background-color: white;
     float: left;
     width: 35%;
@@ -22,7 +22,7 @@
 
 #derecha {
     align-items: center;
-    height: 50%;
+    height: 517px;
     background-color: white;
     float: right;
     width: 64%;
