@@ -20,7 +20,7 @@ namespace PL.Pantallas.Formularios
         {
             if (txtId.Text.Equals("admi") && txtPass.Text.Equals("1234"))
             {
-                Citas Obj = new Citas();
+                Mantenimientos Obj = new Mantenimientos();
                 Obj.Visible = true;
             }
             else

@@ -207,9 +207,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Pantallas\Formularios\AgendarCita.aspx" />
     <Content Include="Pantallas\Formularios\Citas.aspx" />
     <Content Include="Pantallas\Formularios\Clientes.aspx" />
-    <Content Include="Pantallas\Formularios\cls_Especialidades_BLL.txt" />
     <Content Include="Pantallas\Formularios\Doctores.aspx" />
     <Content Include="Pantallas\Formularios\Especialidades.aspx" />
     <Content Include="Pantallas\Formularios\Expedientes.aspx" />
@@ -340,6 +340,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\AgendarCita.aspx.cs">
+      <DependentUpon>AgendarCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Formularios\AgendarCita.aspx.designer.cs">
+      <DependentUpon>AgendarCita.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Formularios\Citas.aspx.cs">
       <DependentUpon>Citas.aspx</DependentUpon>

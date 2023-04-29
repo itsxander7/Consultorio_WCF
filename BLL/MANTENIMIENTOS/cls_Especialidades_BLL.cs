@@ -44,7 +44,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
             Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 
@@ -66,7 +66,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "6", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
             Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
 
 
