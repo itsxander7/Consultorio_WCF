@@ -28,18 +28,18 @@
             <br><br><br>
 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnInsertar" runat="server" Text="Insertar" OnClick="BtnInsertar_Click" />
+            <asp:Button ID="BtnInsertar" runat="server" Text="Insertar" />
 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnEditar" runat="server" Text="Editar" OnClick="BtnEditar_Click" />
+            <asp:Button ID="BtnEditar" runat="server" Text="Editar"  />
 
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar" OnClick="BtnEliminar_Click" />
+            <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar"  />
 
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar" OnClick="BtnFiltrar_Click" />
+            <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar"  />
 
-        </div>
+       
     </h2>
 
 </asp:Content>
