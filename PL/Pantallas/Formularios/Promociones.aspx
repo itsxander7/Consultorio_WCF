@@ -33,21 +33,19 @@
     <asp:Label ID="Label4" runat="server" Text="Servicio" Font-Bold="True" Font-Names="Segoe UI" ForeColor="Black" Font-Size="Small"></asp:Label>
     <br />
                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     <asp:DropDownList ID="DD_IdServicio" runat="server">
-                     </asp:DropDownList>
+                     <asp:TextBox ID="txt_Servicio" runat="server"></asp:TextBox>
     <br /><br />
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <asp:Button ID="btn_Agregar" runat="server" Text="Agregar" BackColor="#CCCCCC" ForeColor="Black" Width="100px" OnClick="btn_Agregar_Click" /> &nbsp;<asp:Button ID="btn_modificar" runat="server" Text="Modificar" BackColor="#CCCCCC" Width="112px" OnClick="btn_modificar_Click" /> 
                      <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btn_eliminar" runat="server" Text="Eliminar" BackColor="#CCCCCC" Height="35px" Width="99px" OnClick="btn_eliminar_Click" />
 
-			&nbsp;<asp:Button ID="btn_Mostrar" runat="server" BackColor="#CCCCCC" OnClick="Button1_Click" Text="Mostrar" Width="112px" />
+			&nbsp;<asp:Button ID="btn_Mostrar" runat="server" BackColor="#CCCCCC" OnClick="Button1_Click" Text="Filtrar" Width="112px" />
 
 			</div> 
 			<div id ="derecha">
                 <br />
             &nbsp; &nbsp; &nbsp;
             <asp:GridView ID="GridView1" runat="server" BackColor="White"></asp:GridView>
-                <asp:TextBox ID="TextBox1" runat="server" BackColor="Yellow"></asp:TextBox>
 			</div>
 			<div id ="pie"></div>
 		</div>
