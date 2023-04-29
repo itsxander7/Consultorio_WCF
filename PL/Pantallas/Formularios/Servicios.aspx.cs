@@ -20,14 +20,14 @@ namespace PL.Pantallas.Formularios
             {
 
                 txtIdespecialidad.Text = string.Empty;
-                CargarDatos();
+            
 
             }
         }
         private void CargarDatos()
         {
 
-            Obj_DAL.uID_Servicio = Convert.ToUInt32(txtIdespecialidad.Text, 16);
+            Obj_DAL.uID_Servicio = Convert.ToUInt32(txtIdespecialidad.Text.Trim());
 
             Obj_BLL.List_Servicio(ref Obj_DAL);
 

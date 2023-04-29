@@ -43,7 +43,7 @@
                             <br />
                         &nbsp;<asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
                         <br />  <br />
-                  <asp:Button ID="Button1" runat="server" Text="Login" Height="53px" OnClick="Button1_Click"  />
+                  <asp:Button ID="Button1" runat="server" Text="Login" Height="53px" OnClick="Button1_Click"/>
                     </form>
                     <div class="pie-form">
                         <a href="#">¿Perdiste tu contraseña?</a><br />
