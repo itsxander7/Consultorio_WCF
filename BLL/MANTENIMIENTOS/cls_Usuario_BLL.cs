@@ -18,18 +18,18 @@ namespace BLL.MANTENIMIENTOS
             BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
-            if (Obj_Usuario_DAL.uID_Usuario == 0)
+            if (Obj_Usuario_DAL.sNombreUsuario == "")
             {
                 Obj_Usuario_DAL.dtParametros = null;
-                Obj_Usuario_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIO", ConfigurationManager.AppSettings["LISTAR_USUARIO"], null);
+                Obj_Usuario_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIOS", ConfigurationManager.AppSettings["LISTAR_USUARIO"], null);
             }
             else
             {
                 Obj_Usuario_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Usuario_DAL.dtParametros);
 
-                Obj_Usuario_DAL.dtParametros.Rows.Add("@IdUsuario", "2", Obj_Usuario_DAL.uID_Usuario);
+                Obj_Usuario_DAL.dtParametros.Rows.Add("@nombreUsuario", "6", Obj_Usuario_DAL.sNombreUsuario);
 
-                Obj_Usuario_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIO", ConfigurationManager.AppSettings["FILTRAR_USUARIO"], Obj_Usuario_DAL.dtParametros);
+                Obj_Usuario_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIOS", ConfigurationManager.AppSettings["FILTRAR_USUARIO"], Obj_Usuario_DAL.dtParametros);
             }
         }
 
@@ -39,15 +39,12 @@ namespace BLL.MANTENIMIENTOS
             BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
-
-
-
             Obj_Usuario_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Usuario_DAL.dtParametros);
 
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@IdUsuario", "2", Obj_Usuario_DAL.uID_Usuario);
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@NombreUsuario", "8", Obj_Usuario_DAL.sNombreUsuario);
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@PasswordUsuario", "2", Obj_Usuario_DAL.sPasswordUsuario);
-           
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@idUsuario", "1", Obj_Usuario_DAL.uID_Usuario);
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@nombreUsuario", "6", Obj_Usuario_DAL.sNombreUsuario);
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@contraseñaUsuario", "6", Obj_Usuario_DAL.sPasswordUsuario);
+
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
@@ -60,14 +57,11 @@ namespace BLL.MANTENIMIENTOS
             BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
 
 
-
             Obj_Usuario_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Usuario_DAL.dtParametros);
 
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@IdUsuario", "2", Obj_Usuario_DAL.uID_Usuario);
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@NombreUsuario", "8", Obj_Usuario_DAL.sNombreUsuario);
-            Obj_Usuario_DAL.dtParametros.Rows.Add("@PasswordUsuario", "2", Obj_Usuario_DAL.sPasswordUsuario);
-
-
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@idUsuario", "1", Obj_Usuario_DAL.uID_Usuario);
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@nombreUsuario", "6", Obj_Usuario_DAL.sNombreUsuario);
+            Obj_Usuario_DAL.dtParametros.Rows.Add("@contraseñaUsuario", "6", Obj_Usuario_DAL.sPasswordUsuario);
 
             Obj_Usuario_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_USUARIO"], "NORMAL", Obj_Usuario_DAL.dtParametros);
 

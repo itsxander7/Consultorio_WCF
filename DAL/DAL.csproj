@@ -48,8 +48,10 @@
     <Compile Include="MANTENIMIENTOS\cls_Expediente_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Facturacion_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_InicioSesion_DAL.cs" />
+    <Compile Include="MANTENIMIENTOS\cls_MetodosPago_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Promociones_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_RegistroUsuario_DAL.cs" />
+    <Compile Include="MANTENIMIENTOS\cls_Roles_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Servicios_DAL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Usuario_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
