@@ -209,6 +209,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Pantallas\Formularios\Citas.aspx" />
     <Content Include="Pantallas\Formularios\Clientes.aspx" />
+    <Content Include="Pantallas\Formularios\cls_Especialidades_BLL.txt" />
     <Content Include="Pantallas\Formularios\Doctores.aspx" />
     <Content Include="Pantallas\Formularios\Especialidades.aspx" />
     <Content Include="Pantallas\Formularios\Expedientes.aspx" />
