@@ -8,7 +8,7 @@ using System.Configuration;
 
 namespace BLL.MANTENIMIENTOS
 {
-    class cls_MetodosPago_BLL
+    public class cls_MetodosPago_BLL
     {
         // LISTAR Y FILTRAR
         public void List_MetodosPago(ref cls_MetodosPago_DAL Obj_MetodosPago_DAL)
