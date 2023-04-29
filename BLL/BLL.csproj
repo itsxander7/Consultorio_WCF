@@ -69,6 +69,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Connected Services\BD_Connection\BD1.wsdl" />
+    <None Include="Connected Services\BD_Connection\BD11.wsdl" />
     <None Include="Connected Services\BD_Connection\WCF__BD3.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -76,6 +77,15 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\BD_Connection\WCF__BD32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\BD_Connection\WCF__BD33.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\BD_Connection\WCF__BD34.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\BD_Connection\WCF__BD35.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />

@@ -41,7 +41,7 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Promo_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Promo_DAL.dtParametros);
 
-            Obj_Promo_DAL.dtParametros.Rows.Add("@IDPROMOCION", "1", Obj_Promo_DAL.uID_Promocion);
+            //Obj_Promo_DAL.dtParametros.Rows.Add("@IDPROMOCION", "1", Obj_Promo_DAL.uID_Promocion);
             Obj_Promo_DAL.dtParametros.Rows.Add("@ID_SERVICIO", "1", Obj_Promo_DAL.uID_Servicio);
             Obj_Promo_DAL.dtParametros.Rows.Add("@MONTO_PROMOCION", "3", Obj_Promo_DAL.fMontoPromocion);
             Obj_Promo_DAL.dtParametros.Rows.Add("@DETALLE_PROMOCION", "6", Obj_Promo_DAL.sDetallePromocion);
