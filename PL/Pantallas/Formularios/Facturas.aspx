@@ -2,4 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1 align="center">
+        <br />
+        Facturación
+    </h1>
+    <p align="center">
+        Información de la facturación.
+         <br />
+        <br />
+        &nbsp;&nbsp;
+               
+            <asp:GridView ID="GridViewfactura" runat="server"></asp:GridView>
+
+    </p>
+
 </asp:Content>
