@@ -58,7 +58,7 @@ namespace BLL.MANTENIMIENTOS
           
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Clientes_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete( ConfigurationManager.AppSettings["GUARDAR_CLIENTES"], "NORMAL", Obj_Clientes_DAL.DtParametros);
+            Obj_Clientes_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete( ConfigurationManager.AppSettings["INSERTAR_CLIENTES"], "NORMAL", Obj_Clientes_DAL.DtParametros);
         }
 
         public void Modificar_Clientes(ref cls_Clientes_DAL Obj_Clientes_DAL)
