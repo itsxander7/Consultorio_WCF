@@ -11,7 +11,27 @@ namespace PL.Pantallas.Formularios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+                       
+
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (txtId.Text.Equals("admi") && txtPass.Text.Equals("1234"))
+            {
+                Mantenimientos Obj = new Mantenimientos();
+                Obj.Visible = true;
+            }
+            else
+
+            if (txtId.Text.Trim()!= "admi")
+
+            {
+                string script = String.Format(@"<script type='text/javascript'>alert('Usuario incorrecto' );</script>", "0033");
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+                return;
+            }
+        }
+        }
     }
-}

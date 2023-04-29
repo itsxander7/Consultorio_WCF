@@ -38,12 +38,12 @@
                     <div class="titulo">
                        &nbsp; Bienvenid@
                               </div>
-                        <form id="loginform">
-                        <input type="text" name="txt_Usuario" placeholder="Usuario" required="">
+                        <form id="loginform">&nbsp;<br />  
+                            <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+                            <br />
+                        &nbsp;<asp:TextBox ID="txtPass" runat="server"></asp:TextBox>
                         <br />  <br />
-                        <input type="password" placeholder="Contraseña" name="txt_Password" required="">
-                        <br />  <br />
-                  <asp:Button ID="Button1" runat="server" Text="Login" Height="53px"/>
+                  <asp:Button ID="Button1" runat="server" Text="Login" Height="53px" OnClick="Button1_Click"/>
                     </form>
                     <div class="pie-form">
                         <a href="#">¿Perdiste tu contraseña?</a><br />
