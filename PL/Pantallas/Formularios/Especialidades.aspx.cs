@@ -14,7 +14,7 @@ namespace PL.Pantallas.Formularios
         {
             if (!Page.IsPostBack)
             {
-                TxtIdEspecialidad.Text = string.Empty;
+                cmbEspecialidad.Text = string.Empty;
                 CargarDatos();
 
             }
@@ -57,19 +57,19 @@ namespace PL.Pantallas.Formularios
         protected void BtnEditar_Click(object sender, EventArgs e)
         {
 
-            if (string.IsNullOrEmpty(TxtIdEspecialidad.Text))
+            if (string.IsNullOrEmpty(cmbEspecialidad.Text))
             {
                 string script = String.Format(@"<script type='text/javascript'>alert('Existen campos vacios' );</script>", "0033");
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
                 return;
             }
 
-            Obj_DAL.IIdEspecialidad = int.Parse(TxtIdEspecialidad.Text);
+            Obj_DAL.IIdEspecialidad = int.Parse(cmbEspecialidad.Text);
             Obj_DAL.SNombreEspecialidad = TxtNombreEspecialidad.Text.Trim();
 
             Obj_BLL.Modificar_Especialidades(ref Obj_DAL);
 
-            TxtIdEspecialidad.Text = string.Empty;
+            cmbEspecialidad.Text = string.Empty;
             TxtNombreEspecialidad.Text = string.Empty;
 
             CargarDatos();
@@ -78,17 +78,17 @@ namespace PL.Pantallas.Formularios
 
         protected void BtnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TxtIdEspecialidad.Text))
+            if (string.IsNullOrEmpty(cmbEspecialidad.Text))
             {
                 string script = String.Format(@"<script type='text/javascript'>alert('Existen campos vacios' );</script>", "0033");
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
                 return;
             }
-            Obj_DAL.IIdEspecialidad = int.Parse(TxtIdEspecialidad.Text);
+            Obj_DAL.IIdEspecialidad = int.Parse(cmbEspecialidad.Text);
 
             Obj_BLL.Eliminar_Especialidades(ref Obj_DAL);
 
-            TxtIdEspecialidad.Text = string.Empty;
+            cmbEspecialidad.Text = string.Empty;
             CargarDatos();
         }
 

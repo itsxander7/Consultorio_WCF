@@ -1,10 +1,11 @@
 ﻿body {
 
 }
-h1 {
+h1{
     font-family: Arial, sans-serif;
     text-align: center;
     font-size: 20px;
+    height: 692px;
 }
 label {
     display: inline-block;

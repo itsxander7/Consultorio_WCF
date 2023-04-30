@@ -21,14 +21,13 @@
            <asp:TextBox ID="txt_Telefono" runat="server" Style="margin-left: 7px;"></asp:TextBox><br><br> 
            <asp:Label ID="Label9" runat="server" Text="Correo:"></asp:Label>
            <asp:TextBox ID="txt_Correo" runat="server" Style="margin-left: 7px;"></asp:TextBox><br><br> 
-           <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
-           <asp:Button ID="btnFiltar" runat="server" Text="Filtrar" OnClick="btnFiltar_Click" />
-           <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClick="btnEditar_Click" />
-           <asp:Button ID="btnBorrar" runat="server" Text="Borrar" OnClick="btnBorrar_Click" /><br><br>
-           <asp:GridView ID="dgvClientes" runat="server" HorizontalAlign="Center" Height="31px" Width="409px"></asp:GridView>
-           <br><br> 
-            
+           <asp:Button ID="btnAgregar" runat="server" Text="Agregar" />
+           <asp:Button ID="btnFiltar" runat="server" Text="Filtrar" />
+           <asp:Button ID="btnEditar" runat="server" Text="Editar" />
+           <asp:Button ID="btnBorrar" runat="server" Text="Borrar" /><br><br>
+           <asp:GridView ID="dgvClientes" runat="server" HorizontalAlign="Center" Height="31px" Width="409px" DataSourceID="SqlDataSource1" EnablePersistedSelection="True" EnableSortingAndPagingCallbacks="True"></asp:GridView>
            
-      
-   
+           <br><br> 
+           </h1>
+        </div>
 </asp:Content>

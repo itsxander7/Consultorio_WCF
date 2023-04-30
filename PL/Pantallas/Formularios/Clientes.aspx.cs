@@ -108,22 +108,22 @@ namespace PL.Pantallas.Formularios
         }
         private void CargarDatos()
         {
-            cls_Clientes_DAL Obj_Clientes_DAL = new cls_Clientes_DAL();
-            cls_Clientes_BLL Obj_Clientes_BLL = new cls_Clientes_BLL();
+            //cls_Clientes_DAL Obj_Clientes_DAL = new cls_Clientes_DAL();
+            //cls_Clientes_BLL Obj_Clientes_BLL = new cls_Clientes_BLL();
 
-            if (txt_IdCliente.Text.Trim() != "")
-            {
-                Obj_Clientes_DAL.IIdCliente = Convert.ToInt32(txt_IdCliente.Text);
-            }
-            else
-            {
-                Obj_Clientes_DAL.IIdCliente = 0;
-            }
+            //if (txt_IdCliente.Text.Trim() != "")
+            //{
+            //    Obj_Clientes_DAL.IIdCliente = Convert.ToInt32(txt_IdCliente.Text);
+            //}
+            //else
+            //{
+            //    Obj_Clientes_DAL.IIdCliente = 0;
+            //}
 
-            Obj_Clientes_BLL.List_Clientes(ref Obj_Clientes_DAL);
-            dgvClientes.DataSource = null;
-            dgvClientes.DataSource = Obj_Clientes_DAL.DtDatos;
-            dgvClientes.DataBind();
+            //Obj_Clientes_BLL.List_Clientes(ref Obj_Clientes_DAL);
+            //dgvClientes.DataSource = null;
+            //dgvClientes.DataSource = Obj_Clientes_DAL.DtDatos;
+            //dgvClientes.DataBind();
 
         }
     }
