@@ -182,13 +182,6 @@
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="bin\WebGrease.dll" />
-    <None Include="Connected Services\BD_Connection\BD1.wsdl" />
-    <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
-    <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
-    <None Include="Connected Services\BD_Connection\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -232,15 +225,6 @@
     <Content Include="Recursos\fonts\maicons.eot" />
     <Content Include="Recursos\fonts\maicons.ttf" />
     <Content Include="Recursos\fonts\maicons.woff" />
-    <None Include="Connected Services\BD_Connection\WCF__BD3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD31.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD32.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Recursos\css\bootstrap.css" />
     <Content Include="Recursos\css\maicons.css" />
@@ -319,11 +303,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\BD_Connection\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -517,9 +496,6 @@
       <Project>{476e8e3b-6c6e-4702-a245-a41a44ed4650}</Project>
       <Name>DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BD_Connection\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
