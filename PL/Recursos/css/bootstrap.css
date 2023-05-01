@@ -204,6 +204,8 @@ svg {
 
 table {
   border-collapse: collapse;
+    margin-left: 582px;
+    margin-top: 0px;
 }
 
 caption {
@@ -246,7 +248,7 @@ textarea {
 button,
 input {
   overflow: visible;
-    margin-left: 31px;
+    margin-left: 0px;
     margin-top: 0px;
 }
 
@@ -262,7 +264,7 @@ select {
 select {
   word-wrap: normal;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 11px;
 }
 
 button,
@@ -270,6 +272,9 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+    width: 163px;
+    margin-left: 19px;
+    margin-top: 0px;
 }
 
 button:not(:disabled),

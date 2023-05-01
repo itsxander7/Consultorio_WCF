@@ -33,6 +33,24 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.TextBox TxtIdDoctor;
 
         /// <summary>
+        /// Control Label10.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label10;
+
+        /// <summary>
+        /// Control txtCedula.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCedula;
+
+        /// <summary>
         /// Control Label3.
         /// </summary>
         /// <remarks>
@@ -42,13 +60,13 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Control TxtIdEspecialidad.
+        /// Control cmbEspecialidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtIdEspecialidad;
+        protected global::System.Web.UI.WebControls.ListBox cmbEspecialidad;
 
         /// <summary>
         /// Control Label4.
@@ -141,6 +159,24 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.TextBox TxtCorreoDoctor;
 
         /// <summary>
+        /// Control Label9.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label9;
+
+        /// <summary>
+        /// Control cmbIdUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox cmbIdUsuario;
+
+        /// <summary>
         /// Control btnInsertar.
         /// </summary>
         /// <remarks>
@@ -168,6 +204,15 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.Button btnEliminar;
 
         /// <summary>
+        /// Control txtBuscarDoctor.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBuscarDoctor;
+
+        /// <summary>
         /// Control BtnMostrar.
         /// </summary>
         /// <remarks>
@@ -175,5 +220,14 @@ namespace PL.Pantallas.Formularios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnMostrar;
+
+        /// <summary>
+        /// Control dgvDoctores.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvDoctores;
     }
 }
