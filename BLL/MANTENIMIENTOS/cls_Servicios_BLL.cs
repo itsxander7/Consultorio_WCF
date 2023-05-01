@@ -21,7 +21,7 @@ namespace BLL.MANTENIMIENTOS
             if (Obj_Servicio_DAL.uID_Servicio == 0)
             {
                 Obj_Servicio_DAL.dtParametros = null;
-                Obj_Servicio_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.SERVICIO", ConfigurationManager.AppSettings["LISTAR_SERVICIO"], null);
+                Obj_Servicio_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.SERVICIO", ConfigurationManager.AppSettings["LISTAR_SERVICIOS"], null);
             }
             else
             {
@@ -29,7 +29,7 @@ namespace BLL.MANTENIMIENTOS
 
                 Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "1", Obj_Servicio_DAL.uID_Servicio);
 
-                Obj_Servicio_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.Servicio", ConfigurationManager.AppSettings["FILTRAR_SERVICIO"], Obj_Servicio_DAL.dtParametros);
+                Obj_Servicio_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.Servicio", ConfigurationManager.AppSettings["FILTRAR_SERVICIOS"], Obj_Servicio_DAL.dtParametros);
             }
         }
 
@@ -51,7 +51,7 @@ namespace BLL.MANTENIMIENTOS
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_SERVICIO"], "NORMAL", Obj_Servicio_DAL.dtParametros);
+            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_SERVICIOS"], "NORMAL", Obj_Servicio_DAL.dtParametros);
         }
 
         public void Modificar_Servicio(ref cls_Servicios_DAL Obj_Servicio_DAL)
@@ -70,7 +70,7 @@ namespace BLL.MANTENIMIENTOS
 
 
 
-            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_SERVICIO"], "NORMAL", Obj_Servicio_DAL.dtParametros);
+            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_SERVICIOS"], "NORMAL", Obj_Servicio_DAL.dtParametros);
 
 
         }
@@ -83,9 +83,9 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Servicio_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Servicio_DAL.dtParametros);
 
-            Obj_Servicio_DAL.dtParametros.Rows.Add("@IdServicio", "2", Obj_Servicio_DAL.uID_Servicio);
+            Obj_Servicio_DAL.dtParametros.Rows.Add("@ID_SERVICIO", "2", Obj_Servicio_DAL.uID_Servicio);
 
-            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_SERVICIO"], "NORMAL", Obj_Servicio_DAL.dtParametros);
+            Obj_Servicio_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_SERVICIOS"], "NORMAL", Obj_Servicio_DAL.dtParametros);
         }
         #endregion
     }

@@ -48,7 +48,7 @@ namespace BLL.MANTENIMIENTOS
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_CITAS"], "insert", Obj_Citas_DAL.dtParametros);
+            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_CITAS"], "insert", Obj_Citas_DAL.dtParametros);
         }
 
         public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)

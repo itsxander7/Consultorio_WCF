@@ -26,7 +26,7 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Roles_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Roles_DAL.dtParametros);
 
-                Obj_Roles_DAL.dtParametros.Rows.Add("@ID_FACTURA", "1", Obj_Roles_DAL.uID_Rol);
+                Obj_Roles_DAL.dtParametros.Rows.Add("@tipoRol", "1", Obj_Roles_DAL.uID_Rol);
 
                 Obj_Roles_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ROLES", ConfigurationManager.AppSettings["FILTRAR_ROLES"], Obj_Roles_DAL.dtParametros);
             }
@@ -44,7 +44,7 @@ namespace BLL.MANTENIMIENTOS
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
-            Obj_Roles_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_ROLES"], "NORMAL", Obj_Roles_DAL.dtParametros);
+            Obj_Roles_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_ROLES"], "NORMAL", Obj_Roles_DAL.dtParametros);
         }
 
         //ACTUALIZAR
