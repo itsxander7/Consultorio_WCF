@@ -14,7 +14,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Roles(ref cls_Roles_DAL Obj_Roles_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_Roles_DAL.uID_Rol == 0)
@@ -35,7 +35,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR
         public void Guardar_Roles(ref cls_Roles_DAL Obj_Roles_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Roles_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Roles_DAL.dtParametros);
 
@@ -51,7 +51,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Roles(ref cls_Roles_DAL Obj_Roles_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Roles_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Roles_DAL.dtParametros);
 
@@ -65,7 +65,7 @@ namespace BLL.MANTENIMIENTOS
         //ELIMINAR
         public void Eliminar_Roles(ref cls_Roles_DAL Obj_Roles_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Roles_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Roles_DAL.dtParametros);
 

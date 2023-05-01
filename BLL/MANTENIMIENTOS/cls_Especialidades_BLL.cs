@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_Especialidad_DAL.IIdEspecialidad == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
@@ -60,7 +60,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
@@ -80,7 +80,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 

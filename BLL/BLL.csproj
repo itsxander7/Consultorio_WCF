@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\WCF_BD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="MANTENIMIENTOS\cls_Citas_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Clientes_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Doctores_BLL.cs" />
@@ -52,7 +57,6 @@
     <Compile Include="MANTENIMIENTOS\cls_Facturacion_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_MetodosPago_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Promociones_BLL.cs" />
-    <Compile Include="MANTENIMIENTOS\cls_regiones_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Roles_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Servicios_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Usuario_BLL.cs" />
@@ -63,6 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Connected Services\WCF_BD\BD.wsdl" />
+    <None Include="Connected Services\WCF_BD\WCF__BD.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF_BD\WCF__BD1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\WCF_BD\WCF__BD2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
   </ItemGroup>
   <ItemGroup>
@@ -72,12 +86,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
+    <None Include="Connected Services\WCF_BD\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="SCRIPTS_SQL\EDITAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\ELIMINAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\FILTRAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\GUARDAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\MOSTRAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\PROYECTOCONSULTORIO.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

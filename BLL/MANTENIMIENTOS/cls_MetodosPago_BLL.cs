@@ -14,7 +14,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_MetodosPago(ref cls_MetodosPago_DAL Obj_MetodosPago_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_MetodosPago_DAL.uID_MetodoPago == 0)
@@ -35,7 +35,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR
         public void Guardar_MetodosPago(ref cls_MetodosPago_DAL Obj_MetodosPago_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_MetodosPago_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_MetodosPago_DAL.dtParametros);
 
@@ -52,7 +52,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_MetodosPago(ref cls_MetodosPago_DAL Obj_MetodosPago_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_MetodosPago_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_MetodosPago_DAL.dtParametros);
 
@@ -67,7 +67,7 @@ namespace BLL.MANTENIMIENTOS
         //ELIMINAR
         public void Eliminar_MetodosPago(ref cls_MetodosPago_DAL Obj_MetodosPago_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_MetodosPago_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_MetodosPago_DAL.dtParametros);
 
