@@ -17,7 +17,7 @@ namespace PL.Pantallas.Formularios
         {
             if (!Page.IsPostBack)
             {
-                txtFiltrar.Text = string.Empty;
+                txt_Filtrar.Text = string.Empty;
                 CargarDatos();
                 CargarCLientes();
                 CargarEspecialidad();
@@ -29,9 +29,9 @@ namespace PL.Pantallas.Formularios
         #region Metodo
         private void CargarDatos()
         {
-            if (txtFiltrar.Text.Trim() != "")
+            if (txt_Filtrar.Text.Trim() != "")
             {
-                Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
+                Obj_Citas_DAL.iIdCita = int.Parse(txt_Filtrar.Text);
             }
             else
             {
@@ -54,11 +54,11 @@ namespace PL.Pantallas.Formularios
 
 
 
-            Obj_Citas_DAL.dtDatos.Rows.Add("0", "--- SELECCIONE UNA CEDULA---");
-
+            Obj_Citas_DAL.dtDatos.Rows.Add(0);
+             
             ddl_Id_Cliente.DataSource = null;
-            ddl_Id_Cliente.DataTextField = "NOMBRE_CLIENTE";
-            ddl_Id_Cliente.DataValueField = "ID_CLIENTE";
+            ddl_Id_Cliente.DataTextField = "ID_CLIENTE";
+            ddl_Id_Cliente.DataValueField ="ID_CLIENTE"; 
             ddl_Id_Cliente.DataSource = Obj_Citas_DAL.dtDatos;
             ddl_Id_Cliente.DataBind();
 
@@ -108,13 +108,14 @@ namespace PL.Pantallas.Formularios
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
 
-            /* if (string.IsNullOrEmpty(Txt_Cliente.Text))
+
+             if (string.IsNullOrEmpty(ddl_Id_Cliente.Text))
              {
                  string script = String.Format(@"<script type='text/javascript'>alert('Existen campos vacios' );</script>", "0033");
                  ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
                  return;
              }
-             else */
+             else 
             if (string.IsNullOrEmpty(ddl_Nombre_Especialidad.Text))
             {
                 string script = String.Format(@"<script type='text/javascript'>alert('Existen campos vacios' );</script>", "0033");
@@ -134,7 +135,8 @@ namespace PL.Pantallas.Formularios
                 return;
             }
 
-            // Obj_Citas_DAL.iIdCliente = int.Parse(Txt_Cliente.Text);
+            
+            Obj_Citas_DAL.iIdCliente = int.Parse(ddl_Id_Cliente.Text);
             Obj_Citas_DAL.iIdEspecialidad = int.Parse(ddl_Nombre_Especialidad.Text);
             Obj_Citas_DAL.iIdDoctor = int.Parse(ddl_Nombre_Doctor.Text);
             Obj_Citas_DAL.dtFecha = DateTime.Parse(Txt_Fecha.Text);
@@ -147,7 +149,7 @@ namespace PL.Pantallas.Formularios
             ddl_Nombre_Especialidad.SelectedValue= "0";
             ddl_Nombre_Doctor.SelectedValue = "0";
             Txt_Fecha.Text = string.Empty;
-            txtFiltrar.Text = string.Empty;
+            txt_Filtrar.Text = string.Empty;
             CargarDatos();
 
 
@@ -155,8 +157,8 @@ namespace PL.Pantallas.Formularios
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
-            //Obj_Citas_DAL.iIdCliente = int.Parse(Txt_Cliente.Text);
+            Obj_Citas_DAL.iIdCita = int.Parse(txt_Numero_Citas.Text);
+            Obj_Citas_DAL.iIdCliente = int.Parse(ddl_Id_Cliente.Text);
             Obj_Citas_DAL.iIdEspecialidad = int.Parse(ddl_Nombre_Especialidad.Text);
             Obj_Citas_DAL.iIdDoctor = int.Parse(ddl_Nombre_Doctor.Text);
             Obj_Citas_DAL.dtFecha = DateTime.Parse(Txt_Fecha.Text);
@@ -167,31 +169,31 @@ namespace PL.Pantallas.Formularios
             ddl_Nombre_Especialidad.SelectedValue = "0";
             ddl_Nombre_Doctor.SelectedValue = "0";
             Txt_Fecha.Text = string.Empty;
-            txtFiltrar.Text = string.Empty;
+            txt_Numero_Citas.Text = string.Empty;
+            txt_Numero_Citas.Enabled = false;
+
             CargarDatos();
 
         }
 
         protected void btnBorrar_Click(object sender, EventArgs e)
         {
-            Obj_Citas_DAL.iIdCita = int.Parse(txtFiltrar.Text);
+            Obj_Citas_DAL.iIdCita = int.Parse(txt_Numero_Citas.Text);
 
             Obj_Citas_BLL.Eliminar_Citas(ref Obj_Citas_DAL);
 
-            txtFiltrar.Text = string.Empty;
+            txt_Numero_Citas.Text = string.Empty;
+            txt_Numero_Citas.Enabled = false;
             CargarDatos();
         }
 
 
 
-        protected void ddl_SelectedIndexChanged(object sender, EventArgs e)
-        {
+     
 
-        }
-
-        protected void Txt_Fecha_TextChanged(object sender, EventArgs e)
+        protected void lb_Habilitar_Click(object sender, EventArgs e)
         {
-            
+            txt_Numero_Citas.Enabled = true;
         }
     }
 }

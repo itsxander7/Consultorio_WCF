@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f9dc010d-341a-4f45-a16a-96b9dbe38303" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="495470fb-6113-4273-8385-5803413f743f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://localhost:84/WCF__BD.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="WCF__BD.xsd" MetadataType="Schema" ID="b7301fa0-9af1-4d18-8e74-aa09d8732b85" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd0" />
-    <MetadataFile FileName="WCF__BD1.xsd" MetadataType="Schema" ID="9d880e3a-d6c5-4a1c-85ce-b88123e1ede9" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd2" />
-    <MetadataFile FileName="WCF__BD.disco" MetadataType="Disco" ID="229a4ca0-e6d8-4804-ab72-731a0e242295" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?disco" />
-    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="0da3d9ae-5028-4299-bcf6-8660652c45bd" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?wsdl" />
-    <MetadataFile FileName="WCF__BD2.xsd" MetadataType="Schema" ID="41369b31-5375-4513-bb1d-e1054ec99afd" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCF__BD.xsd" MetadataType="Schema" ID="5d1feaf6-2438-4d69-9182-a6f6b8344122" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCF__BD1.xsd" MetadataType="Schema" ID="03539b2a-5a52-421e-bd7b-6b6dde22ad24" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF__BD.disco" MetadataType="Disco" ID="1c522890-d33b-4990-8be9-b69ca3d545ad" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?disco" />
+    <MetadataFile FileName="BD.wsdl" MetadataType="Wsdl" ID="35d7a1cf-88e2-4468-ad92-c6b99f23bd5c" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?wsdl" />
+    <MetadataFile FileName="WCF__BD2.xsd" MetadataType="Schema" ID="ed7afd1b-4754-467d-90e3-3774135f75b7" SourceId="1" SourceUrl="http://localhost:84/WCF__BD.svc?xsd=xsd1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

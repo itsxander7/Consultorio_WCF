@@ -183,13 +183,13 @@
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="bin\WebGrease.dll" />
     <None Include="Connected Services\BD_Connection\BD.wsdl" />
-    <None Include="Connected Services\BD_Connection\WCF__BD.disco" />
     <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
     <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
     <None Include="Connected Services\BD_Connection\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\BD_Connection\WCF__BD.disco" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

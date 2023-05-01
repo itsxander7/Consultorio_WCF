@@ -43,12 +43,13 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Citas_DAL.dtParametros.Rows.Add("@idCliente", "1", Obj_Citas_DAL.iIdCliente);
             Obj_Citas_DAL.dtParametros.Rows.Add("@idEspecialidad", "1", Obj_Citas_DAL.iIdEspecialidad);
-            Obj_Citas_DAL.dtParametros.Rows.Add("@idDoctor", "1", Obj_Citas_DAL.iIdDoctor);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@idDoctor", "1", Obj_Citas_DAL.iIdDoctor);    
             Obj_Citas_DAL.dtParametros.Rows.Add("@fecha", "8", Obj_Citas_DAL.dtFecha);
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
+            //Agregar try catch
 
-            Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["GUARDAR_CITAS"], "insert", Obj_Citas_DAL.dtParametros);
+          Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_CITAS"], "insert", Obj_Citas_DAL.dtParametros);
         }
 
         public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
@@ -63,7 +64,7 @@ namespace BLL.MANTENIMIENTOS
             Obj_Citas_DAL.dtParametros.Rows.Add("@id_cliente", "1", Obj_Citas_DAL.iIdCliente);
             Obj_Citas_DAL.dtParametros.Rows.Add("@id_especialidad", "1", Obj_Citas_DAL.iIdEspecialidad);
             Obj_Citas_DAL.dtParametros.Rows.Add("@id_doctor", "1", Obj_Citas_DAL.iIdDoctor);
-            Obj_Citas_DAL.dtParametros.Rows.Add("@fecha", "6", Obj_Citas_DAL.dtFecha);
+            Obj_Citas_DAL.dtParametros.Rows.Add("@fecha", "8", Obj_Citas_DAL.dtFecha);
 
 
             Obj_Citas_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_CITAS"], "NORMAL", Obj_Citas_DAL.dtParametros);

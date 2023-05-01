@@ -87,13 +87,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\BD_Connection\WCF__BD.disco" />
     <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
     <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
     <None Include="Connected Services\BD_Connection\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\BD_Connection\WCF__BD.disco" />
     <Content Include="SCRIPTS_SQL\EDITAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\ELIMINAR_CLIENTE.sql" />
     <Content Include="SCRIPTS_SQL\FILTRAR_CLIENTE.sql" />

@@ -15,6 +15,33 @@ namespace PL.Pantallas.Formularios
     {
 
         /// <summary>
+        /// lFiltro control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lFiltro;
+
+        /// <summary>
+        /// ddl_Filtrar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_Filtrar;
+
+        /// <summary>
+        /// btn_Filtrar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Filtrar;
+
+        /// <summary>
         /// GridViewfactura control.
         /// </summary>
         /// <remarks>
