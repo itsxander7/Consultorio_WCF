@@ -94,15 +94,22 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Connected Services\BD_Connection\WCF__BD.disco" />
-    <Content Include="SCRIPTS_SQL\EDITAR_CLIENTE.sql" />
-    <Content Include="SCRIPTS_SQL\ELIMINAR_CLIENTE.sql" />
-    <Content Include="SCRIPTS_SQL\FILTRAR_CLIENTE.sql" />
-    <Content Include="SCRIPTS_SQL\GUARDAR_CLIENTE.sql" />
-    <Content Include="SCRIPTS_SQL\MOSTRAR_CLIENTE.sql" />
-    <Content Include="SCRIPTS_SQL\PROYECTOCONSULTORIO.sql" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\BD_Connection\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_EDITAR_CITAS.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_ELIMINAR_CITAS.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_FILTRAR_CITAS.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_INSERTAR_CITAS.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_LISTAR_CITAS.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_LISTAR_ID_CLIENTE.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_LISTAR_NOMBRE_DOCTOR.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_CITAS\SP_LISTAR_NOMBRE_ESPECIALIDAD.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_FACTURAS\SP_FILTRAR_FACTURA.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_FACTURAS\SP_LISTAR_DF_CLIENTEID.sql" />
+    <Content Include="SP_CITAS_FACTURACION\SP_PANTALLA_FACTURAS\SP_LISTAR_FACTURACION.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
