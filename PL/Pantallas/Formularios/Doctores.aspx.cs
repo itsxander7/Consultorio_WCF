@@ -48,13 +48,13 @@ namespace PL.Pantallas.Formularios
         {
             Obj_DAL.iIdDoctor = Convert.ToInt32(TxtIdDoctor.Text.Trim());
             Obj_DAL.iCedula = Convert.ToInt32(txtCedula.Text.Trim());
-            Obj_DAL.iIdEspecialidad = Convert.ToInt32(cmbEspecialidad.Text.Trim());
+            Obj_DAL.iIdEspecialidad = 16;
             Obj_DAL.sNombreDoctor = TxtNombreDoctor.Text.Trim();
             Obj_DAL.sApellido1Doctor = TxtApellido2Doctor.Text.Trim();
             Obj_DAL.sApellido2Doctor = TxtApellido1Doctor.Text.Trim();
             Obj_DAL.iTelefonoDoctor = Convert.ToInt32(TxtTelefonoDoctor.Text.Trim());
             Obj_DAL.sCorreoDoctor = TxtCorreoDoctor.Text.Trim();
-            Obj_DAL.iIdUsuario = Convert.ToInt32(cmbUsuario.Text.Trim());
+            Obj_DAL.iIdUsuario = 123;
             Obj_BLL.Guardar_Doctores(ref Obj_DAL);
             CargarDatos();
         }
