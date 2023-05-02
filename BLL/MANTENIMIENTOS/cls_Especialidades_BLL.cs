@@ -15,10 +15,10 @@ namespace BLL.MANTENIMIENTOS
         public void List_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
-            if (Obj_Especialidad_DAL.IIdEspecialidad == 0)
+            if (Obj_Especialidad_DAL.iIdEspecialidad == 0)
             {
                 Obj_Especialidad_DAL.DtParametros = null;
                 Obj_Especialidad_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["LISTAR_ESPECIALIDADES"], null);
@@ -27,7 +27,7 @@ namespace BLL.MANTENIMIENTOS
             {
                 Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-                Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
+                Obj_Especialidad_DAL.DtParametros.Rows.Add("@Id_Especialidad", "1", Obj_Especialidad_DAL.iIdEspecialidad);
 
                 Obj_Especialidad_DAL.DtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["FILTRAR_ESPECIALIDADES"], Obj_Especialidad_DAL.DtParametros);
             }
@@ -36,38 +36,29 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
-
-
-
-
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
-
-
-
-
-
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@Nombre_Especialidad", "6", Obj_Especialidad_DAL.sNombreEspecialidad);
 
             //SI LA TABLA NO ES IDENTITY SE ENVIA "NORMAL" DE LO CONTRARIO CUALQUIER OTRO VALOR
 
             Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["INSERTAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
         }
 
+
         public void Modificar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+ 
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@nombre_especialidad", "6", Obj_Especialidad_DAL.SNombreEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@Id_Especialidad", "1", Obj_Especialidad_DAL.iIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@Nombre_Especialidad", "6", Obj_Especialidad_DAL.sNombreEspecialidad);
 
 
 
@@ -80,11 +71,11 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Especialidad_DAL.DtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.DtParametros);
 
-            Obj_Especialidad_DAL.DtParametros.Rows.Add("@id_especialidad", "1", Obj_Especialidad_DAL.IIdEspecialidad);
+            Obj_Especialidad_DAL.DtParametros.Rows.Add("@Id_Especialidad", "1", Obj_Especialidad_DAL.iIdEspecialidad);
 
             Obj_Especialidad_DAL.SMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_ESPECIALIDADES"], "NORMAL", Obj_Especialidad_DAL.DtParametros);
         }

@@ -16,7 +16,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_Citas_DAL.iIdCita == 0)
@@ -37,7 +37,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 
@@ -54,7 +54,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
@@ -76,7 +76,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Citas(ref cls_Citas_DAL Obj_Citas_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Citas_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Citas_DAL.dtParametros);
 

@@ -14,8 +14,8 @@ namespace DAL.MANTENIMIENTOS
         private DataTable _dtDatos, _dtParametros;
 
 
-        public int IIdEspecialidad { get => _iIdEspecialidad; set => _iIdEspecialidad = value; }
-        public string SNombreEspecialidad { get => _sNombreEspecialidad; set => _sNombreEspecialidad = value; }
+        public int iIdEspecialidad { get => _iIdEspecialidad; set => _iIdEspecialidad = value; }
+        public string sNombreEspecialidad { get => _sNombreEspecialidad; set => _sNombreEspecialidad = value; }
         public string SMsjError { get => _sMsjError; set => _sMsjError = value; }
         public DataTable DtDatos { get => _dtDatos; set => _dtDatos = value; }
         public DataTable DtParametros { get => _dtParametros; set => _dtParametros = value; }

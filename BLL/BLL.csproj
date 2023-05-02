@@ -44,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\BD_Connection\Reference.cs">
+    <Compile Include="Connected Services\WCF_BD\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -57,7 +57,6 @@
     <Compile Include="MANTENIMIENTOS\cls_Facturacion_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_MetodosPago_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Promociones_BLL.cs" />
-    <Compile Include="MANTENIMIENTOS\cls_regiones_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Roles_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Servicios_BLL.cs" />
     <Compile Include="MANTENIMIENTOS\cls_Usuario_BLL.cs" />
@@ -68,24 +67,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Connected Services\BD_Connection\BD1.wsdl" />
-    <None Include="Connected Services\BD_Connection\BD11.wsdl" />
-    <None Include="Connected Services\BD_Connection\WCF__BD3.xsd">
+    <None Include="Connected Services\WCF_BD\BD.wsdl" />
+    <None Include="Connected Services\WCF_BD\WCF__BD.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD31.xsd">
+    <None Include="Connected Services\WCF_BD\WCF__BD1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD32.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD33.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD34.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD35.xsd">
+    <None Include="Connected Services\WCF_BD\WCF__BD2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
@@ -97,9 +86,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
-    <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
-    <None Include="Connected Services\BD_Connection\Reference.svcmap">
+    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
+    <None Include="Connected Services\WCF_BD\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -111,7 +100,7 @@
     <Content Include="SCRIPTS_SQL\PROYECTOCONSULTORIO.sql" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BD_Connection\" />
+    <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

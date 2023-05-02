@@ -182,10 +182,10 @@
     <Content Include="bin\System.Web.Optimization.dll" />
     <Content Include="bin\System.Web.Optimization.xml" />
     <Content Include="bin\WebGrease.dll" />
-    <None Include="Connected Services\BD_Connection\BD1.wsdl" />
-    <None Include="Connected Services\BD_Connection\configuration91.svcinfo" />
-    <None Include="Connected Services\BD_Connection\configuration.svcinfo" />
-    <None Include="Connected Services\BD_Connection\Reference.svcmap">
+    <None Include="Connected Services\WCF_BD\BD.wsdl" />
+    <None Include="Connected Services\WCF_BD\configuration91.svcinfo" />
+    <None Include="Connected Services\WCF_BD\configuration.svcinfo" />
+    <None Include="Connected Services\WCF_BD\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -232,13 +232,13 @@
     <Content Include="Recursos\fonts\maicons.eot" />
     <Content Include="Recursos\fonts\maicons.ttf" />
     <Content Include="Recursos\fonts\maicons.woff" />
-    <None Include="Connected Services\BD_Connection\WCF__BD3.xsd">
+    <None Include="Connected Services\WCF_BD\WCF__BD.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD31.xsd">
+    <None Include="Connected Services\WCF_BD\WCF__BD1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\BD_Connection\WCF__BD32.xsd">
+    <None Include="Connected Services\WCF_BD\WCF__BD2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -319,7 +319,7 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Connected Services\BD_Connection\Reference.cs">
+    <Compile Include="Connected Services\WCF_BD\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -519,7 +519,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\BD_Connection\" />
+    <WCFMetadataStorage Include="Connected Services\WCF_BD\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
