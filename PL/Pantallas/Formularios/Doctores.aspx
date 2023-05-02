@@ -29,11 +29,11 @@
     <asp:Label ID="Label9" runat="server" Text="ID Usuario:"></asp:Label>&nbsp;&nbsp;
     <asp:ListBox runat="server" ID="cmbIdUsuario" Height="27px" Width="187px"></asp:ListBox>
     <br /><br />
-    <asp:Button ID="btnInsertar" runat="server" Text="Insertar" />
+    <asp:Button ID="btnInsertar" runat="server" Text="Insertar" OnClick="btnInsertar_Click1" />
     &nbsp;&nbsp;&nbsp;
     <asp:Button ID="btnEditar" runat="server" Text="Editar" OnClick="btnEditar_Click" />
     &nbsp;&nbsp;&nbsp;
-    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" /><br /><br />
+    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" /><br /><br />
     <asp:TextBox runat="server" ID="txtBuscarDoctor"></asp:TextBox> &nbsp;&nbsp;
     <asp:Button ID="BtnMostrar" runat="server" Text="Mostrar" OnClick="BtnMostrar_Click" /> <br /><br />
     <asp:GridView ID="dgvDoctores" runat="server" HorizontalAlign="Center" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
