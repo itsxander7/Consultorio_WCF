@@ -66,7 +66,7 @@ namespace PL.Pantallas.Formularios
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cmbEspecialidad;
+        protected global::System.Web.UI.WebControls.DropDownList cmbEspecialidad;
 
         /// <summary>
         /// Control Label4.
@@ -168,13 +168,13 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.Label Label9;
 
         /// <summary>
-        /// Control cmbIdUsuario.
+        /// Control cmbUsuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox cmbIdUsuario;
+        protected global::System.Web.UI.WebControls.DropDownList cmbUsuario;
 
         /// <summary>
         /// Control btnInsertar.

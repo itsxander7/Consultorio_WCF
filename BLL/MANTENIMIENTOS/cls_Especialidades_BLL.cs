@@ -50,7 +50,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Modificar_Especialidades(ref cls_Especialidades_DAL Obj_Especialidad_DAL)
         {
-
+ 
             WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 

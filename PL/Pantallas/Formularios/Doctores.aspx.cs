@@ -15,7 +15,9 @@ namespace PL.Pantallas.Formularios
         cls_Doctores_DAL Obj_DAL = new cls_Doctores_DAL();
         protected void Page_Load(object sender, EventArgs e)
         {
+            CargarEspecialidad();
             CargarDatos();
+            CargarUsuario();
         }
 
         private void CargarDatos()
@@ -46,13 +48,13 @@ namespace PL.Pantallas.Formularios
         {
             Obj_DAL.iIdDoctor = Convert.ToInt32(TxtIdDoctor.Text.Trim());
             Obj_DAL.iCedula = Convert.ToInt32(txtCedula.Text.Trim());
-            Obj_DAL.iIdEspecialidad = 18;
+            Obj_DAL.iIdEspecialidad = Convert.ToInt32(cmbEspecialidad.Text.Trim());
             Obj_DAL.sNombreDoctor = TxtNombreDoctor.Text.Trim();
             Obj_DAL.sApellido1Doctor = TxtApellido2Doctor.Text.Trim();
             Obj_DAL.sApellido2Doctor = TxtApellido1Doctor.Text.Trim();
             Obj_DAL.iTelefonoDoctor = Convert.ToInt32(TxtTelefonoDoctor.Text.Trim());
             Obj_DAL.sCorreoDoctor = TxtCorreoDoctor.Text.Trim();
-            Obj_DAL.iIdUsuario = 1234;
+            Obj_DAL.iIdUsuario = Convert.ToInt32(cmbUsuario.Text.Trim());
             Obj_BLL.Guardar_Doctores(ref Obj_DAL);
             CargarDatos();
         }
@@ -91,5 +93,39 @@ namespace PL.Pantallas.Formularios
             TxtIdDoctor.Text = string.Empty;
             CargarDatos();
         }
+        private void CargarEspecialidad()
+        {
+            Obj_DAL.iIdEspecialidad = 0;
+            Obj_BLL.Desplegar_Especialidad(ref Obj_DAL);
+
+            Obj_DAL.dtDatos.Rows.Add("0","--SELECCIONE UNA ESPECIALIDAD--");
+            cmbEspecialidad.DataSource = null;
+            cmbEspecialidad.DataTextField = "NOMBRE_ESPECIALIDAD";
+            cmbEspecialidad.DataValueField = "ID_ESPECIALIDAD";
+            cmbEspecialidad.DataSource = Obj_DAL.dtDatos;
+            cmbEspecialidad.DataBind();
+
+            cmbEspecialidad.SelectedValue = "0";
+
+
+        }
+        private void CargarUsuario()
+        {
+            Obj_DAL.iIdUsuario = 0;
+            Obj_BLL.Desplegar_Usuario(ref Obj_DAL);
+
+            Obj_DAL.dtDatos.Rows.Add("0", "--SELECCIONE UN USUARIO--");
+            cmbUsuario.DataSource = null;
+            cmbUsuario.DataTextField = "NOMBRE_USUARIO";
+            cmbUsuario.DataValueField = "ID_USUARIO";
+            cmbUsuario.DataSource = Obj_DAL.dtDatos;
+            cmbUsuario.DataBind();
+
+            cmbUsuario.SelectedValue = "0";
+
+
+        }
+
+       
     }
 }

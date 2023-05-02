@@ -94,5 +94,41 @@ namespace BLL.MANTENIMIENTOS
 
             Obj_Doctor_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["ELIMINAR_DOCTORES"], "NORMAL", Obj_Doctor_DAL.dtParametros);
         }
+        public void Desplegar_Especialidad(ref cls_Doctores_DAL Obj_Especialidad_DAL)
+        {
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
+
+
+
+            if (Obj_Especialidad_DAL.iIdEspecialidad == 0)
+            {
+                Obj_Especialidad_DAL.dtParametros = null;
+                Obj_Especialidad_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["DESPLEGAR_ESPECIALIDAD"], null);
+            }
+            else
+            {
+                Obj_Especialidad_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.dtParametros);
+                Obj_Especialidad_DAL.dtParametros.Rows.Add("@ID", "1", Obj_Especialidad_DAL.iIdEspecialidad);
+                Obj_Especialidad_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.ESPECIALIDADES", ConfigurationManager.AppSettings["DESPLEGAR_ESPECIALIDAD"], Obj_Especialidad_DAL.dtParametros);
+            }
+        }
+        public void Desplegar_Usuario(ref cls_Doctores_DAL Obj_Especialidad_DAL)
+        {
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
+
+
+
+            if (Obj_Especialidad_DAL.iCedula == 0)
+            {
+                Obj_Especialidad_DAL.dtParametros = null;
+                Obj_Especialidad_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIOS", ConfigurationManager.AppSettings["DESPLEGAR_USUARIO"], null);
+            }
+            else
+            {
+                Obj_Especialidad_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Especialidad_DAL.dtParametros);
+                Obj_Especialidad_DAL.dtParametros.Rows.Add("@ID", "1", Obj_Especialidad_DAL.iIdEspecialidad);
+                Obj_Especialidad_DAL.dtDatos = OBJ_WCF.ListarFiltrar("SCH_ADMIN.USUARIOS", ConfigurationManager.AppSettings["DESPLEGAR_USUARIO"], Obj_Especialidad_DAL.dtParametros);
+            }
+        }
     }
 }
