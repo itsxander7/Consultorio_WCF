@@ -16,7 +16,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Facturas(ref cls_Facturacion_DAL Obj_Facturacion_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             Obj_Facturacion_DAL.dtParametros = null;

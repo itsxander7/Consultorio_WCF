@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Promo(ref cls_Promociones_DAL Obj_Promo_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_Promo_DAL.uID_Promocion == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Promo(ref cls_Promociones_DAL Obj_Promo_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             Obj_Promo_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Promo_DAL.dtParametros);
@@ -54,7 +54,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Promo(ref cls_Promociones_DAL Obj_Promo_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
@@ -75,7 +75,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Promo(ref cls_Promociones_DAL Obj_Promo_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Promo_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Promo_DAL.dtParametros);
 
