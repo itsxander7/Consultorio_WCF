@@ -1,45 +1,39 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pantallas/Maestras/BaseMantenimientos.Master" AutoEventWireup="true" CodeBehind="Facturas.aspx.cs" Inherits="PL.Pantallas.Formularios.Facturas" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     
-       
-    <h2 ALIGN=center>
- <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            INFORMACION DE FACTURACION<br><br><br>
-            ID FACTURA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtIdFactura" runat="server"></asp:TextBox>
+    <link href="../../Recursos/css/SaludVida.css" rel="stylesheet" />
 
-            <br><br><br>
-            METODO DE PAGO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TxtNombreMetodoPago" runat="server"></asp:TextBox>
+    <h1>
+        <div style="font-family: sans-serif; color: rgba(110, 128, 122, 0.8); font-size: 16px; text-align: center">
+            <br>
+            <br>
+            <br>
 
-            
-            <br><br><br>
-            CLIENTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtCliente" runat="server" Width="210px"></asp:TextBox>
-        <br><br><br>
-        TOTAL NETO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtTotalNeto" runat="server"></asp:TextBox>   
-        
-        <br><br><br><asp:GridView ID="GridViewfactura" runat="server" HorizontalAlign="Center"></asp:GridView>
 
-            <br><br><br>
+            <p style="font-weight: bold">
+                INFORMACION DE FACTURACION
+            </p>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnInsertar" runat="server" Text="Insertar" />
+            <br>
+            <br>
+            <br>
+            <asp:Label ID="lFiltro" runat="server" Text="Filtrar por Cedula:"></asp:Label>&nbsp&nbsp;&nbsp&nbsp
+            <asp:DropDownList ID="ddl_Filtrar" runat="server" Style="margin-left: 7px; margin-top: 0;" Width="400px" BorderColor="#CCCCCC"></asp:DropDownList>
+            <asp:Button ID="btn_Filtrar" runat="server" Text="Filtrar" BackColor="#00FFCC" BorderColor="#00FFCC" ForeColor="#666666" OnClick="btn_Filtrar_Click"/>
+            <br>
+            <br>
+            <br>
+            <asp:GridView ID="GridViewfactura" runat="server" HorizontalAlign="Center"></asp:GridView>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnEditar" runat="server" Text="Editar"  />
+            <br>
+            <br>
+            <br>
+        </div>
 
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnEliminar" runat="server" Text="Eliminar"  />
 
-             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="BtnFiltrar" runat="server" Text="Filtrar"  />
 
-       
-    </h2>
 
+    </h1>
 </asp:Content>
