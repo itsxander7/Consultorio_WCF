@@ -15,7 +15,7 @@ namespace BLL.MANTENIMIENTOS
         public void List_Servicio(ref cls_Servicios_DAL Obj_Servicio_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
             if (Obj_Servicio_DAL.uID_Servicio == 0)
@@ -36,7 +36,7 @@ namespace BLL.MANTENIMIENTOS
         //GUARDAR Y ACTUALIZAR
         public void Guardar_Servicio(ref cls_Servicios_DAL Obj_Servicio_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
@@ -57,7 +57,7 @@ namespace BLL.MANTENIMIENTOS
         public void Modificar_Servicio(ref cls_Servicios_DAL Obj_Servicio_DAL)
         {
 
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
 
 
@@ -79,7 +79,7 @@ namespace BLL.MANTENIMIENTOS
 
         public void Eliminar_Servicio(ref cls_Servicios_DAL Obj_Servicio_DAL)
         {
-            BD_Connection.BDClient OBJ_WCF = new BD_Connection.BDClient();
+            WCF_BD.BDClient OBJ_WCF = new WCF_BD.BDClient();
 
             Obj_Servicio_DAL.dtParametros = OBJ_WCF.Get_DT_Param(Obj_Servicio_DAL.dtParametros);
 

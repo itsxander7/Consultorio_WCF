@@ -24,13 +24,13 @@ namespace PL.Pantallas.Formularios
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Control cmbEspecialidad.
+        /// Control txtIdEspecialidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cmbEspecialidad;
+        protected global::System.Web.UI.WebControls.TextBox txtIdEspecialidad;
 
         /// <summary>
         /// Control Label3.
@@ -76,6 +76,15 @@ namespace PL.Pantallas.Formularios
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnEliminar;
+
+        /// <summary>
+        /// Control txtBuscarEspecialidad.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBuscarEspecialidad;
 
         /// <summary>
         /// Control BtnFiltrar.
