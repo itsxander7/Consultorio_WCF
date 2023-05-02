@@ -76,7 +76,7 @@ namespace BLL.MANTENIMIENTOS
 
 
 
-            Obj_Doctores_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_DOCTORES"], "NORMAL", Obj_Doctores_DAL.dtParametros);
+            Obj_Doctores_DAL.sMsjError = OBJ_WCF.Ins_Upd_Delete(ConfigurationManager.AppSettings["EDITAR_DOCTOR"], "NORMAL", Obj_Doctores_DAL.dtParametros);
 
 
         }

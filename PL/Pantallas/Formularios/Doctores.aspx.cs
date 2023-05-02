@@ -27,6 +27,7 @@ namespace PL.Pantallas.Formularios
             else
             {
                 Obj_DAL.iIdDoctor = Convert.ToInt32(txtBuscarDoctor.Text.Trim());
+
             }
             Obj_BLL.List_Doctores(ref Obj_DAL);
 
